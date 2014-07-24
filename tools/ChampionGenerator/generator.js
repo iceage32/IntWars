@@ -1,4 +1,4 @@
-var RIOT_API_KEY = 'e12060d5-bb74-4ef3-8b97-ff8a52746626'; //Go to https://developer.riotgames.com/ to get your riot development key
+var RIOT_API_KEY = ''; //Go to https://developer.riotgames.com/ to get your riot development key
 
 var ChampionString = '#ifndef _CHAMPION_{:championNameUpper:}_H\r\n\
 #define _CHAMPION_{:championNameUpper:}_H\r\n\
