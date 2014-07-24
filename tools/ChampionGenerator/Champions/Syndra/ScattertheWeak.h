@@ -11,11 +11,11 @@ class ScattertheWeak : public Spell {
 
     public:
     ScattertheWeak(Champion* owner) : Spell(ID_SCATTERTHEWEAK, owner, 0.25f, 0) {
-        cooldown[0] = 18f;
+        cooldown[0] = 18.0f;
         cooldown[1] = 16.5f;
-        cooldown[2] = 15f;
+        cooldown[2] = 15.0f;
         cooldown[3] = 13.5f;
-        cooldown[4] = 12f;
+        cooldown[4] = 12.0f;
 
         cost[0] = 50;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class ScattertheWeak : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

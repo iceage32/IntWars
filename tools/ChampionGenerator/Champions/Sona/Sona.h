@@ -16,17 +16,17 @@ class Sona : public Champion {
         spells.push_back(new SongofCelerity(this));
         spells.push_back(new Crescendo(this));
 
-        stats->setCurrentHealth(380f);
-        stats->setMaxHealth(380f);
-        stats->setCurrentMana(265f);
-        stats->setMaxMana(265f);
-        stats->setBaseAd(47f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(330f);
-        stats->setArmor(12f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(380.0f);
+        stats->setMaxHealth(380.0f);
+        stats->setCurrentMana(265.0f);
+        stats->setMaxMana(265.0f);
+        stats->setBaseAd(47.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(330.0f);
+        stats->setArmor(12.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

@@ -11,11 +11,11 @@ class GlacialFissure : public Spell {
 
     public:
     GlacialFissure(Champion* owner) : Spell(ID_GLACIALFISSURE, owner, 0.25f, 0) {
-        cooldown[0] = 140f;
-        cooldown[1] = 120f;
-        cooldown[2] = 100f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[0] = 140.0f;
+        cooldown[1] = 120.0f;
+        cooldown[2] = 100.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 100;
         cost[1] = 100;
@@ -31,7 +31,7 @@ class GlacialFissure : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

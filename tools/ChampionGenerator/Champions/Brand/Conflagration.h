@@ -11,11 +11,11 @@ class Conflagration : public Spell {
 
     public:
     Conflagration(Champion* owner) : Spell(ID_CONFLAGRATION, owner, 0.25f, 0) {
-        cooldown[0] = 12f;
-        cooldown[1] = 11f;
-        cooldown[2] = 10f;
-        cooldown[3] = 9f;
-        cooldown[4] = 8f;
+        cooldown[0] = 12.0f;
+        cooldown[1] = 11.0f;
+        cooldown[2] = 10.0f;
+        cooldown[3] = 9.0f;
+        cooldown[4] = 8.0f;
 
         cost[0] = 70;
         cost[1] = 75;
@@ -31,7 +31,7 @@ class Conflagration : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

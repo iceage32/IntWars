@@ -11,11 +11,11 @@ class DeathLotus : public Spell {
 
     public:
     DeathLotus(Champion* owner) : Spell(ID_DEATHLOTUS, owner, 0.25f, 0) {
-        cooldown[0] = 60f;
+        cooldown[0] = 60.0f;
         cooldown[1] = 52.5f;
-        cooldown[2] = 45f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[2] = 45.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class DeathLotus : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

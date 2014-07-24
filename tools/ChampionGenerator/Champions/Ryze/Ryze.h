@@ -16,17 +16,17 @@ class Ryze : public Champion {
         spells.push_back(new SpellFlux(this));
         spells.push_back(new DesperatePower(this));
 
-        stats->setCurrentHealth(414f);
-        stats->setMaxHealth(414f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(52f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(340f);
-        stats->setArmor(15f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(414.0f);
+        stats->setMaxHealth(414.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(52.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(340.0f);
+        stats->setArmor(15.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.35f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

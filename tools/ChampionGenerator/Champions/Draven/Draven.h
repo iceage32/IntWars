@@ -16,16 +16,16 @@ class Draven : public Champion {
         spells.push_back(new StandAside(this));
         spells.push_back(new WhirlingDeath(this));
 
-        stats->setCurrentHealth(420f);
-        stats->setMaxHealth(420f);
-        stats->setCurrentMana(240f);
-        stats->setMaxMana(240f);
+        stats->setCurrentHealth(420.0f);
+        stats->setMaxHealth(420.0f);
+        stats->setCurrentMana(240.0f);
+        stats->setMaxMana(240.0f);
         stats->setBaseAd(46.5f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(330f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(5f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(330.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(5.0f);
         stats->setMp5(6.95f);
     }
 

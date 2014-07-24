@@ -11,11 +11,11 @@ class Tumble : public Spell {
 
     public:
     Tumble(Champion* owner) : Spell(ID_TUMBLE, owner, 0.25f, 0) {
-        cooldown[0] = 6f;
-        cooldown[1] = 5f;
-        cooldown[2] = 4f;
-        cooldown[3] = 3f;
-        cooldown[4] = 2f;
+        cooldown[0] = 6.0f;
+        cooldown[1] = 5.0f;
+        cooldown[2] = 4.0f;
+        cooldown[3] = 3.0f;
+        cooldown[4] = 2.0f;
 
         cost[0] = 30;
         cost[1] = 30;
@@ -31,7 +31,7 @@ class Tumble : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

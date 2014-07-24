@@ -11,11 +11,11 @@ class DarkFlight : public Spell {
 
     public:
     DarkFlight(Champion* owner) : Spell(ID_DARKFLIGHT, owner, 0.25f, 0) {
-        cooldown[0] = 16f;
-        cooldown[1] = 15f;
-        cooldown[2] = 14f;
-        cooldown[3] = 13f;
-        cooldown[4] = 12f;
+        cooldown[0] = 16.0f;
+        cooldown[1] = 15.0f;
+        cooldown[2] = 14.0f;
+        cooldown[3] = 13.0f;
+        cooldown[4] = 12.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class DarkFlight : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

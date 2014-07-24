@@ -16,17 +16,17 @@ class Anivia : public Champion {
         spells.push_back(new Frostbite(this));
         spells.push_back(new GlacialStorm(this));
 
-        stats->setCurrentHealth(350f);
-        stats->setMaxHealth(350f);
-        stats->setCurrentMana(257f);
-        stats->setMaxMana(257f);
-        stats->setBaseAd(48f);
-        stats->setRange(600f);
-        stats->setMovementSpeed(325f);
+        stats->setCurrentHealth(350.0f);
+        stats->setMaxHealth(350.0f);
+        stats->setCurrentMana(257.0f);
+        stats->setMaxMana(257.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(600.0f);
+        stats->setMovementSpeed(325.0f);
         stats->setArmor(14.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.65f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

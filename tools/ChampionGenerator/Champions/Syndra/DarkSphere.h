@@ -11,11 +11,11 @@ class DarkSphere : public Spell {
 
     public:
     DarkSphere(Champion* owner) : Spell(ID_DARKSPHERE, owner, 0.25f, 0) {
-        cooldown[0] = 4f;
-        cooldown[1] = 4f;
-        cooldown[2] = 4f;
-        cooldown[3] = 4f;
-        cooldown[4] = 4f;
+        cooldown[0] = 4.0f;
+        cooldown[1] = 4.0f;
+        cooldown[2] = 4.0f;
+        cooldown[3] = 4.0f;
+        cooldown[4] = 4.0f;
 
         cost[0] = 40;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class DarkSphere : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

@@ -11,11 +11,11 @@ class CrystallineExoskeleton : public Spell {
 
     public:
     CrystallineExoskeleton(Champion* owner) : Spell(ID_CRYSTALLINEEXOSKELETON, owner, 0.25f, 0) {
-        cooldown[0] = 13f;
+        cooldown[0] = 13.0f;
         cooldown[1] = 12.5f;
-        cooldown[2] = 12f;
+        cooldown[2] = 12.0f;
         cooldown[3] = 11.5f;
-        cooldown[4] = 11f;
+        cooldown[4] = 11.0f;
 
         cost[0] = 60;
         cost[1] = 60;
@@ -31,7 +31,7 @@ class CrystallineExoskeleton : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

@@ -16,15 +16,15 @@ class Janna : public Champion {
         spells.push_back(new EyeOfTheStorm(this));
         spells.push_back(new Monsoon(this));
 
-        stats->setCurrentHealth(356f);
-        stats->setMaxHealth(356f);
-        stats->setCurrentMana(302f);
-        stats->setMaxMana(302f);
-        stats->setBaseAd(49f);
-        stats->setRange(475f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(13f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(356.0f);
+        stats->setMaxHealth(356.0f);
+        stats->setCurrentMana(302.0f);
+        stats->setMaxMana(302.0f);
+        stats->setBaseAd(49.0f);
+        stats->setRange(475.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(13.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.9f);
     }

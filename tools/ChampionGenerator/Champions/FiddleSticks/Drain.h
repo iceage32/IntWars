@@ -11,11 +11,11 @@ class Drain : public Spell {
 
     public:
     Drain(Champion* owner) : Spell(ID_DRAIN, owner, 0.25f, 0) {
-        cooldown[0] = 10f;
-        cooldown[1] = 9f;
-        cooldown[2] = 8f;
-        cooldown[3] = 7f;
-        cooldown[4] = 6f;
+        cooldown[0] = 10.0f;
+        cooldown[1] = 9.0f;
+        cooldown[2] = 8.0f;
+        cooldown[3] = 7.0f;
+        cooldown[4] = 6.0f;
 
         cost[0] = 80;
         cost[1] = 90;
@@ -31,7 +31,7 @@ class Drain : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

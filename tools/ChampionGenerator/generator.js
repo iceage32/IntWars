@@ -1,4 +1,4 @@
-var RIOT_API_KEY = 'e12060d5-bb74-4ef3-8b97-ff8a52746626'; //Go to https://developer.riotgames.com/ to get your riot development key
+var RIOT_API_KEY = ''; //Go to https://developer.riotgames.com/ to get your riot development key
 
 var ChampionString = '#ifndef _CHAMPION_{:championNameUpper:}_H\r\n\
 #define _CHAMPION_{:championNameUpper:}_H\r\n\
@@ -61,7 +61,7 @@ class {:spellName:} : public Spell {\r\n\
     }\r\n\
 \r\n\
     /**\r\n\
-     * TODO : create the projectile here, and notify it to the map/game\r\n\
+     * create the projectile here, and notify it to the map/game\r\n\
      */\r\n\
     virtual bool cast(float x, float y, Unit* u = 0) {\r\n\
         return Spell::cast(x, y, u);\r\n\
@@ -96,14 +96,18 @@ console.log("Getting champion data from datadragon...");
 
 var champions = "";
 http.get(RIOT_API_URL, function(res) {
-    res.on("data", function(chunk) {
-        champions += chunk;
-    });
-    res.on("end", function() {
-        console.log('Successfully fetched data. Starting champion creation.');
-        champions = JSON.parse(champions);
-        createChampions();
-    });
+    if(res.statusCode == 200) {
+        res.on("data", function(chunk) {
+            champions += chunk;
+        });
+        res.on("end", function() {
+            console.log('Successfully fetched data. Starting champion creation.');
+            champions = JSON.parse(champions);
+            createChampions();
+        });
+    } else {
+        console.log('Http error: ' + res.statusCode);
+    }
 }).on('error', function(e) {
     console.log("An error occured while fetching data: " + e.message);
 });
@@ -141,11 +145,11 @@ function createChampions() {
             spellFile.bindParam('{:spellName:}', toAlphaNoSpaces(s.name));
             spellFile.bindParam('{:spellNameUpper:}', toAlphaNoSpaces(s.name).toUpperCase());
 
-            spellFile.bindParam('{:cd1:}', (typeof s.cooldown[0] != 'undefined') ? s.cooldown[0] : 0);
-            spellFile.bindParam('{:cd2:}', (typeof s.cooldown[1] != 'undefined') ? s.cooldown[1] : 0);
-            spellFile.bindParam('{:cd3:}', (typeof s.cooldown[2] != 'undefined') ? s.cooldown[2] : 0);
-            spellFile.bindParam('{:cd4:}', (typeof s.cooldown[3] != 'undefined') ? s.cooldown[3] : 0);
-            spellFile.bindParam('{:cd5:}', (typeof s.cooldown[4] != 'undefined') ? s.cooldown[4] : 0);
+            spellFile.bindParam('{:cd1:}', (typeof s.cooldown[0] != 'undefined') ? floatVal(s.cooldown[0]) : floatVal(0));
+            spellFile.bindParam('{:cd2:}', (typeof s.cooldown[1] != 'undefined') ? floatVal(s.cooldown[1]) : floatVal(0));
+            spellFile.bindParam('{:cd3:}', (typeof s.cooldown[2] != 'undefined') ? floatVal(s.cooldown[2]) : floatVal(0));
+            spellFile.bindParam('{:cd4:}', (typeof s.cooldown[3] != 'undefined') ? floatVal(s.cooldown[3]) : floatVal(0));
+            spellFile.bindParam('{:cd5:}', (typeof s.cooldown[4] != 'undefined') ? floatVal(s.cooldown[4]) : floatVal(0));
 
             spellFile.bindParam('{:cost1:}', (typeof s.cost[0] != 'undefined') ? s.cost[0] : 0);
             spellFile.bindParam('{:cost2:}', (typeof s.cost[1] != 'undefined') ? s.cost[1] : 0);
@@ -169,17 +173,17 @@ function createChampions() {
         championFile.bindParam('{:championName:}', toAlphaNoSpaces(c.name));
         championFile.bindParam('{:championNameUpper:}', toAlphaNoSpaces(c.name).toUpperCase());
 
-        championFile.bindParam('{:currentHP:}', c.stats.hp);
-        championFile.bindParam('{:maxHP:}', c.stats.hp);
-        championFile.bindParam('{:currentMP:}', c.stats.mp);
-        championFile.bindParam('{:maxMP:}', c.stats.mp);
-        championFile.bindParam('{:baseAD:}', c.stats.attackdamage);
-        championFile.bindParam('{:range:}', c.stats.attackrange);
-        championFile.bindParam('{:moveSpeed:}', c.stats.movespeed);
-        championFile.bindParam('{:armor:}', c.stats.armor);
-        championFile.bindParam('{:magicres:}', c.stats.spellblock);
-        championFile.bindParam('{:HPper5:}', c.stats.hpregen);
-        championFile.bindParam('{:MPPer5:}', c.stats.mpregen);
+        championFile.bindParam('{:currentHP:}', floatVal(c.stats.hp));
+        championFile.bindParam('{:maxHP:}', floatVal(c.stats.hp));
+        championFile.bindParam('{:currentMP:}', floatVal(c.stats.mp));
+        championFile.bindParam('{:maxMP:}', floatVal(c.stats.mp));
+        championFile.bindParam('{:baseAD:}', floatVal(c.stats.attackdamage));
+        championFile.bindParam('{:range:}', floatVal(c.stats.attackrange));
+        championFile.bindParam('{:moveSpeed:}', floatVal(c.stats.movespeed));
+        championFile.bindParam('{:armor:}', floatVal(c.stats.armor));
+        championFile.bindParam('{:magicres:}', floatVal(c.stats.spellblock));
+        championFile.bindParam('{:HPper5:}', floatVal(c.stats.hpregen));
+        championFile.bindParam('{:MPPer5:}', floatVal(c.stats.mpregen));
 
         championFile.bindParam('{:spellList:}', spellList);
         championFile.bindParam('{:includeSpellList:}', includeSpellList);
@@ -188,6 +192,10 @@ function createChampions() {
         console.log("Successfully created champion file for champion '" + c.name + "'");
     }
 }
+function floatVal(val) {
+    return ((val % 1 == 0) ? val + '.0' : val);
+}
+
 function toAlpha(str) {
     return str.replace(/[^a-zA-Z ]/g, "")
 }

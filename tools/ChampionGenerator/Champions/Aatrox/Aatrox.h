@@ -16,17 +16,17 @@ class Aatrox : public Champion {
         spells.push_back(new BladesofTorment(this));
         spells.push_back(new Massacre(this));
 
-        stats->setCurrentHealth(395f);
-        stats->setMaxHealth(395f);
-        stats->setCurrentMana(30f);
-        stats->setMaxMana(30f);
-        stats->setBaseAd(55f);
-        stats->setRange(150f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(18f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(395.0f);
+        stats->setMaxHealth(395.0f);
+        stats->setCurrentMana(30.0f);
+        stats->setMaxMana(30.0f);
+        stats->setBaseAd(55.0f);
+        stats->setRange(150.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(18.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.75f);
-        stats->setMp5(0f);
+        stats->setMp5(0.0f);
     }
 
 };

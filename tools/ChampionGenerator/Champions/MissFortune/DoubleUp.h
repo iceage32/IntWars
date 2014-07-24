@@ -11,11 +11,11 @@ class DoubleUp : public Spell {
 
     public:
     DoubleUp(Champion* owner) : Spell(ID_DOUBLEUP, owner, 0.25f, 0) {
-        cooldown[0] = 7f;
-        cooldown[1] = 6f;
-        cooldown[2] = 5f;
-        cooldown[3] = 4f;
-        cooldown[4] = 3f;
+        cooldown[0] = 7.0f;
+        cooldown[1] = 6.0f;
+        cooldown[2] = 5.0f;
+        cooldown[3] = 4.0f;
+        cooldown[4] = 3.0f;
 
         cost[0] = 43;
         cost[1] = 46;
@@ -31,7 +31,7 @@ class DoubleUp : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

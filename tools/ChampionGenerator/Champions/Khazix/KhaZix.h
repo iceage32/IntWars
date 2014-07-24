@@ -16,15 +16,15 @@ class KhaZix : public Champion {
         spells.push_back(new Leap(this));
         spells.push_back(new VoidAssault(this));
 
-        stats->setCurrentHealth(430f);
-        stats->setMaxHealth(430f);
-        stats->setCurrentMana(260f);
-        stats->setMaxMana(260f);
-        stats->setBaseAd(50f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(350f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(430.0f);
+        stats->setMaxHealth(430.0f);
+        stats->setCurrentMana(260.0f);
+        stats->setMaxMana(260.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(350.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.25f);
         stats->setMp5(6.75f);
     }

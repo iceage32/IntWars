@@ -11,11 +11,11 @@ class Pyroclasm : public Spell {
 
     public:
     Pyroclasm(Champion* owner) : Spell(ID_PYROCLASM, owner, 0.25f, 0) {
-        cooldown[0] = 105f;
-        cooldown[1] = 90f;
-        cooldown[2] = 75f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[0] = 105.0f;
+        cooldown[1] = 90.0f;
+        cooldown[2] = 75.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 100;
         cost[1] = 100;
@@ -31,7 +31,7 @@ class Pyroclasm : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

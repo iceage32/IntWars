@@ -11,11 +11,11 @@ class LunarRush : public Spell {
 
     public:
     LunarRush(Champion* owner) : Spell(ID_LUNARRUSH, owner, 0.25f, 0) {
-        cooldown[0] = 25f;
-        cooldown[1] = 20f;
-        cooldown[2] = 15f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[0] = 25.0f;
+        cooldown[1] = 20.0f;
+        cooldown[2] = 15.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 50;
         cost[1] = 65;
@@ -31,7 +31,7 @@ class LunarRush : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

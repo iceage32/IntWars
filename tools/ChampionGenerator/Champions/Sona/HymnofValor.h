@@ -11,11 +11,11 @@ class HymnofValor : public Spell {
 
     public:
     HymnofValor(Champion* owner) : Spell(ID_HYMNOFVALOR, owner, 0.25f, 0) {
-        cooldown[0] = 7f;
-        cooldown[1] = 7f;
-        cooldown[2] = 7f;
-        cooldown[3] = 7f;
-        cooldown[4] = 7f;
+        cooldown[0] = 7.0f;
+        cooldown[1] = 7.0f;
+        cooldown[2] = 7.0f;
+        cooldown[3] = 7.0f;
+        cooldown[4] = 7.0f;
 
         cost[0] = 45;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class HymnofValor : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

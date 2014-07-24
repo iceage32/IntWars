@@ -16,17 +16,17 @@ class Ahri : public Champion {
         spells.push_back(new Charm(this));
         spells.push_back(new SpiritRush(this));
 
-        stats->setCurrentHealth(380f);
-        stats->setMaxHealth(380f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(50f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(330f);
-        stats->setArmor(15f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(380.0f);
+        stats->setMaxHealth(380.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(330.0f);
+        stats->setArmor(15.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.5f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

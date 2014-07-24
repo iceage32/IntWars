@@ -11,11 +11,11 @@ class DeadlyBloom : public Spell {
 
     public:
     DeadlyBloom(Champion* owner) : Spell(ID_DEADLYBLOOM, owner, 0.25f, 0) {
-        cooldown[0] = 7f;
+        cooldown[0] = 7.0f;
         cooldown[1] = 6.5f;
-        cooldown[2] = 6f;
+        cooldown[2] = 6.0f;
         cooldown[3] = 5.5f;
-        cooldown[4] = 5f;
+        cooldown[4] = 5.0f;
 
         cost[0] = 75;
         cost[1] = 80;
@@ -31,7 +31,7 @@ class DeadlyBloom : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

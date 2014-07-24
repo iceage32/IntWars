@@ -16,15 +16,15 @@ class Syndra : public Champion {
         spells.push_back(new ScattertheWeak(this));
         spells.push_back(new UnleashedPower(this));
 
-        stats->setCurrentHealth(380f);
-        stats->setMaxHealth(380f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(51f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(330f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(380.0f);
+        stats->setMaxHealth(380.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(51.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(330.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.5f);
         stats->setMp5(6.9f);
     }

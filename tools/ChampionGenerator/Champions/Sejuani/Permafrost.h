@@ -11,11 +11,11 @@ class Permafrost : public Spell {
 
     public:
     Permafrost(Champion* owner) : Spell(ID_PERMAFROST, owner, 0.25f, 0) {
-        cooldown[0] = 11f;
-        cooldown[1] = 11f;
-        cooldown[2] = 11f;
-        cooldown[3] = 11f;
-        cooldown[4] = 11f;
+        cooldown[0] = 11.0f;
+        cooldown[1] = 11.0f;
+        cooldown[2] = 11.0f;
+        cooldown[3] = 11.0f;
+        cooldown[4] = 11.0f;
 
         cost[0] = 55;
         cost[1] = 55;
@@ -31,7 +31,7 @@ class Permafrost : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

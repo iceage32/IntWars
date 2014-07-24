@@ -11,11 +11,11 @@ class RelentlessPursuit : public Spell {
 
     public:
     RelentlessPursuit(Champion* owner) : Spell(ID_RELENTLESSPURSUIT, owner, 0.25f, 0) {
-        cooldown[0] = 14f;
-        cooldown[1] = 13f;
-        cooldown[2] = 12f;
-        cooldown[3] = 11f;
-        cooldown[4] = 10f;
+        cooldown[0] = 14.0f;
+        cooldown[1] = 13.0f;
+        cooldown[2] = 12.0f;
+        cooldown[3] = 11.0f;
+        cooldown[4] = 10.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class RelentlessPursuit : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

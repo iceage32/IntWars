@@ -16,17 +16,17 @@ class Tryndamere : public Champion {
         spells.push_back(new SpinningSlash(this));
         spells.push_back(new UndyingRage(this));
 
-        stats->setCurrentHealth(461f);
-        stats->setMaxHealth(461f);
-        stats->setCurrentMana(100f);
-        stats->setMaxMana(100f);
-        stats->setBaseAd(56f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
+        stats->setCurrentHealth(461.0f);
+        stats->setMaxHealth(461.0f);
+        stats->setCurrentMana(100.0f);
+        stats->setMaxMana(100.0f);
+        stats->setBaseAd(56.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
         stats->setArmor(18.9f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
-        stats->setMp5(0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
+        stats->setMp5(0.0f);
     }
 
 };

@@ -11,11 +11,11 @@ class Hawkshot : public Spell {
 
     public:
     Hawkshot(Champion* owner) : Spell(ID_HAWKSHOT, owner, 0.25f, 0) {
-        cooldown[0] = 60f;
-        cooldown[1] = 55f;
-        cooldown[2] = 50f;
-        cooldown[3] = 45f;
-        cooldown[4] = 40f;
+        cooldown[0] = 60.0f;
+        cooldown[1] = 55.0f;
+        cooldown[2] = 50.0f;
+        cooldown[3] = 45.0f;
+        cooldown[4] = 40.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class Hawkshot : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

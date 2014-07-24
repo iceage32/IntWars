@@ -11,11 +11,11 @@ class BarrelRoll : public Spell {
 
     public:
     BarrelRoll(Champion* owner) : Spell(ID_BARRELROLL, owner, 0.25f, 0) {
-        cooldown[0] = 11f;
-        cooldown[1] = 10f;
-        cooldown[2] = 9f;
-        cooldown[3] = 8f;
-        cooldown[4] = 7f;
+        cooldown[0] = 11.0f;
+        cooldown[1] = 10.0f;
+        cooldown[2] = 9.0f;
+        cooldown[3] = 8.0f;
+        cooldown[4] = 7.0f;
 
         cost[0] = 60;
         cost[1] = 65;
@@ -31,7 +31,7 @@ class BarrelRoll : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

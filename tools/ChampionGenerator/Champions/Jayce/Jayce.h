@@ -16,17 +16,17 @@ class Jayce : public Champion {
         spells.push_back(new ThunderingBlowAccelerationGate(this));
         spells.push_back(new MercuryCannonMercuryHammer(this));
 
-        stats->setCurrentHealth(420f);
-        stats->setMaxHealth(420f);
-        stats->setCurrentMana(240f);
-        stats->setMaxMana(240f);
+        stats->setCurrentHealth(420.0f);
+        stats->setMaxHealth(420.0f);
+        stats->setCurrentMana(240.0f);
+        stats->setMaxMana(240.0f);
         stats->setBaseAd(46.5f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
         stats->setArmor(16.5f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(6f);
-        stats->setMp5(7f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(6.0f);
+        stats->setMp5(7.0f);
     }
 
 };

@@ -16,15 +16,15 @@ class Tristana : public Champion {
         spells.push_back(new ExplosiveShot(this));
         spells.push_back(new BusterShot(this));
 
-        stats->setCurrentHealth(415f);
-        stats->setMaxHealth(415f);
-        stats->setCurrentMana(193f);
-        stats->setMaxMana(193f);
+        stats->setCurrentHealth(415.0f);
+        stats->setMaxHealth(415.0f);
+        stats->setCurrentMana(193.0f);
+        stats->setMaxMana(193.0f);
         stats->setBaseAd(46.5f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.1f);
         stats->setMp5(6.45f);
     }

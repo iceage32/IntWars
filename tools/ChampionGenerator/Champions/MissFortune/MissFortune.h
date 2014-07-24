@@ -16,15 +16,15 @@ class MissFortune : public Champion {
         spells.push_back(new MakeItRain(this));
         spells.push_back(new BulletTime(this));
 
-        stats->setCurrentHealth(435f);
-        stats->setMaxHealth(435f);
-        stats->setCurrentMana(212f);
-        stats->setMaxMana(212f);
+        stats->setCurrentHealth(435.0f);
+        stats->setMaxHealth(435.0f);
+        stats->setCurrentMana(212.0f);
+        stats->setMaxMana(212.0f);
         stats->setBaseAd(46.5f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.1f);
         stats->setMp5(6.95f);
     }

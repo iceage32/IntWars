@@ -16,15 +16,15 @@ class Maokai : public Champion {
         spells.push_back(new SaplingToss(this));
         spells.push_back(new VengefulMaelstrom(this));
 
-        stats->setCurrentHealth(421f);
-        stats->setMaxHealth(421f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(58f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(22f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(421.0f);
+        stats->setMaxHealth(421.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(58.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(22.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.25f);
         stats->setMp5(6.45f);
     }

@@ -16,17 +16,17 @@ class Vi : public Champion {
         spells.push_back(new ExcessiveForce(this));
         spells.push_back(new AssaultandBattery(this));
 
-        stats->setCurrentHealth(440f);
-        stats->setMaxHealth(440f);
-        stats->setCurrentMana(220f);
-        stats->setMaxMana(220f);
-        stats->setBaseAd(50f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(350f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(440.0f);
+        stats->setMaxHealth(440.0f);
+        stats->setCurrentMana(220.0f);
+        stats->setMaxMana(220.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(350.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.5f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

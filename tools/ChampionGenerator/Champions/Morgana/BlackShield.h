@@ -11,11 +11,11 @@ class BlackShield : public Spell {
 
     public:
     BlackShield(Champion* owner) : Spell(ID_BLACKSHIELD, owner, 0.25f, 0) {
-        cooldown[0] = 23f;
-        cooldown[1] = 21f;
-        cooldown[2] = 19f;
-        cooldown[3] = 17f;
-        cooldown[4] = 15f;
+        cooldown[0] = 23.0f;
+        cooldown[1] = 21.0f;
+        cooldown[2] = 19.0f;
+        cooldown[3] = 17.0f;
+        cooldown[4] = 15.0f;
 
         cost[0] = 50;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class BlackShield : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

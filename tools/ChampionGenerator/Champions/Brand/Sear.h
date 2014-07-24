@@ -11,11 +11,11 @@ class Sear : public Spell {
 
     public:
     Sear(Champion* owner) : Spell(ID_SEAR, owner, 0.25f, 0) {
-        cooldown[0] = 8f;
+        cooldown[0] = 8.0f;
         cooldown[1] = 7.5f;
-        cooldown[2] = 7f;
+        cooldown[2] = 7.0f;
         cooldown[3] = 6.5f;
-        cooldown[4] = 6f;
+        cooldown[4] = 6.0f;
 
         cost[0] = 50;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class Sear : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

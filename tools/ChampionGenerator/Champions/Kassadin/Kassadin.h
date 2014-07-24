@@ -16,15 +16,15 @@ class Kassadin : public Champion {
         spells.push_back(new ForcePulse(this));
         spells.push_back(new Riftwalk(this));
 
-        stats->setCurrentHealth(433f);
-        stats->setMaxHealth(433f);
-        stats->setCurrentMana(230f);
-        stats->setMaxMana(230f);
+        stats->setCurrentHealth(433.0f);
+        stats->setMaxHealth(433.0f);
+        stats->setCurrentMana(230.0f);
+        stats->setMaxMana(230.0f);
         stats->setBaseAd(52.3f);
-        stats->setRange(150f);
-        stats->setMovementSpeed(340f);
-        stats->setArmor(18f);
-        stats->setMagicArmor(30f);
+        stats->setRange(150.0f);
+        stats->setMovementSpeed(340.0f);
+        stats->setArmor(18.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.95f);
         stats->setMp5(6.9f);
     }

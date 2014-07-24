@@ -11,11 +11,11 @@ class GravityField : public Spell {
 
     public:
     GravityField(Champion* owner) : Spell(ID_GRAVITYFIELD, owner, 0.25f, 0) {
-        cooldown[0] = 17f;
-        cooldown[1] = 16f;
-        cooldown[2] = 15f;
-        cooldown[3] = 14f;
-        cooldown[4] = 13f;
+        cooldown[0] = 17.0f;
+        cooldown[1] = 16.0f;
+        cooldown[2] = 15.0f;
+        cooldown[3] = 14.0f;
+        cooldown[4] = 13.0f;
 
         cost[0] = 65;
         cost[1] = 65;
@@ -31,7 +31,7 @@ class GravityField : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

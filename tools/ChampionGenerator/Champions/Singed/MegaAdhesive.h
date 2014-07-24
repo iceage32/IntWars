@@ -11,11 +11,11 @@ class MegaAdhesive : public Spell {
 
     public:
     MegaAdhesive(Champion* owner) : Spell(ID_MEGAADHESIVE, owner, 0.25f, 0) {
-        cooldown[0] = 14f;
-        cooldown[1] = 14f;
-        cooldown[2] = 14f;
-        cooldown[3] = 14f;
-        cooldown[4] = 14f;
+        cooldown[0] = 14.0f;
+        cooldown[1] = 14.0f;
+        cooldown[2] = 14.0f;
+        cooldown[3] = 14.0f;
+        cooldown[4] = 14.0f;
 
         cost[0] = 70;
         cost[1] = 80;
@@ -31,7 +31,7 @@ class MegaAdhesive : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

@@ -11,11 +11,11 @@ class Meditate : public Spell {
 
     public:
     Meditate(Champion* owner) : Spell(ID_MEDITATE, owner, 0.25f, 0) {
-        cooldown[0] = 35f;
-        cooldown[1] = 35f;
-        cooldown[2] = 35f;
-        cooldown[3] = 35f;
-        cooldown[4] = 35f;
+        cooldown[0] = 35.0f;
+        cooldown[1] = 35.0f;
+        cooldown[2] = 35.0f;
+        cooldown[3] = 35.0f;
+        cooldown[4] = 35.0f;
 
         cost[0] = 50;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class Meditate : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

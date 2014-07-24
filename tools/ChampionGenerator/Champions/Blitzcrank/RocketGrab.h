@@ -11,11 +11,11 @@ class RocketGrab : public Spell {
 
     public:
     RocketGrab(Champion* owner) : Spell(ID_ROCKETGRAB, owner, 0.25f, 0) {
-        cooldown[0] = 20f;
-        cooldown[1] = 19f;
-        cooldown[2] = 18f;
-        cooldown[3] = 17f;
-        cooldown[4] = 16f;
+        cooldown[0] = 20.0f;
+        cooldown[1] = 19.0f;
+        cooldown[2] = 18.0f;
+        cooldown[3] = 17.0f;
+        cooldown[4] = 16.0f;
 
         cost[0] = 100;
         cost[1] = 100;
@@ -31,7 +31,7 @@ class RocketGrab : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

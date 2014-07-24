@@ -16,15 +16,15 @@ class Karma : public Champion {
         spells.push_back(new Inspire(this));
         spells.push_back(new Mantra(this));
 
-        stats->setCurrentHealth(383f);
-        stats->setMaxHealth(383f);
-        stats->setCurrentMana(290f);
-        stats->setMaxMana(290f);
-        stats->setBaseAd(50f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(14f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(383.0f);
+        stats->setMaxHealth(383.0f);
+        stats->setCurrentMana(290.0f);
+        stats->setMaxMana(290.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(14.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.7f);
         stats->setMp5(6.8f);
     }

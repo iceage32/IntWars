@@ -16,15 +16,15 @@ class Elise : public Champion {
         spells.push_back(new CocoonRappel(this));
         spells.push_back(new SpiderForm(this));
 
-        stats->setCurrentHealth(395f);
-        stats->setMaxHealth(395f);
-        stats->setCurrentMana(240f);
-        stats->setMaxMana(240f);
+        stats->setCurrentHealth(395.0f);
+        stats->setMaxHealth(395.0f);
+        stats->setCurrentMana(240.0f);
+        stats->setMaxMana(240.0f);
         stats->setBaseAd(47.5f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(335f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(335.0f);
         stats->setArmor(16.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.7f);
         stats->setMp5(6.8f);
     }

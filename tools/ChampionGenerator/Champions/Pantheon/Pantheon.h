@@ -16,15 +16,15 @@ class Pantheon : public Champion {
         spells.push_back(new HeartseekerStrike(this));
         spells.push_back(new GrandSkyfall(this));
 
-        stats->setCurrentHealth(433f);
-        stats->setMaxHealth(433f);
-        stats->setCurrentMana(210f);
-        stats->setMaxMana(210f);
+        stats->setCurrentHealth(433.0f);
+        stats->setMaxHealth(433.0f);
+        stats->setCurrentMana(210.0f);
+        stats->setMaxMana(210.0f);
         stats->setBaseAd(50.7f);
-        stats->setRange(150f);
-        stats->setMovementSpeed(355f);
+        stats->setRange(150.0f);
+        stats->setMovementSpeed(355.0f);
         stats->setArmor(21.1f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.75f);
         stats->setMp5(6.6f);
     }

@@ -16,15 +16,15 @@ class Annie : public Champion {
         spells.push_back(new MoltenShield(this));
         spells.push_back(new SummonTibbers(this));
 
-        stats->setCurrentHealth(384f);
-        stats->setMaxHealth(384f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(48f);
-        stats->setRange(625f);
-        stats->setMovementSpeed(335f);
+        stats->setCurrentHealth(384.0f);
+        stats->setMaxHealth(384.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(625.0f);
+        stats->setMovementSpeed(335.0f);
         stats->setArmor(12.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.9f);
     }

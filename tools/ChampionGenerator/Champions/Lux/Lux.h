@@ -16,17 +16,17 @@ class Lux : public Champion {
         spells.push_back(new LucentSingularity(this));
         spells.push_back(new FinalSpark(this));
 
-        stats->setCurrentHealth(345f);
-        stats->setMaxHealth(345f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(50f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(330f);
-        stats->setArmor(12f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(345.0f);
+        stats->setMaxHealth(345.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(330.0f);
+        stats->setArmor(12.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
-        stats->setMp5(6f);
+        stats->setMp5(6.0f);
     }
 
 };

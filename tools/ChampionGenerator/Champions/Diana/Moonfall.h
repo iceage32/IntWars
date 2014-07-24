@@ -11,11 +11,11 @@ class Moonfall : public Spell {
 
     public:
     Moonfall(Champion* owner) : Spell(ID_MOONFALL, owner, 0.25f, 0) {
-        cooldown[0] = 26f;
-        cooldown[1] = 24f;
-        cooldown[2] = 22f;
-        cooldown[3] = 20f;
-        cooldown[4] = 18f;
+        cooldown[0] = 26.0f;
+        cooldown[1] = 24.0f;
+        cooldown[2] = 22.0f;
+        cooldown[3] = 20.0f;
+        cooldown[4] = 18.0f;
 
         cost[0] = 70;
         cost[1] = 70;
@@ -31,7 +31,7 @@ class Moonfall : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

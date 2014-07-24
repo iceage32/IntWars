@@ -16,15 +16,15 @@ class Evelynn : public Champion {
         spells.push_back(new Ravage(this));
         spells.push_back(new AgonysEmbrace(this));
 
-        stats->setCurrentHealth(380f);
-        stats->setMaxHealth(380f);
-        stats->setCurrentMana(190f);
-        stats->setMaxMana(190f);
-        stats->setBaseAd(48f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(340f);
-        stats->setArmor(16f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(380.0f);
+        stats->setMaxHealth(380.0f);
+        stats->setCurrentMana(190.0f);
+        stats->setMaxMana(190.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(340.0f);
+        stats->setArmor(16.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(8.9f);
         stats->setMp5(7.1f);
     }

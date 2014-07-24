@@ -16,15 +16,15 @@ class Malphite : public Champion {
         spells.push_back(new GroundSlam(this));
         spells.push_back(new UnstoppableForce(this));
 
-        stats->setCurrentHealth(423f);
-        stats->setMaxHealth(423f);
-        stats->setCurrentMana(215f);
-        stats->setMaxMana(215f);
+        stats->setCurrentHealth(423.0f);
+        stats->setMaxHealth(423.0f);
+        stats->setCurrentMana(215.0f);
+        stats->setMaxMana(215.0f);
         stats->setBaseAd(56.3f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(22f);
-        stats->setMagicArmor(30f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(22.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.45f);
         stats->setMp5(6.4f);
     }

@@ -16,16 +16,16 @@ class Kayle : public Champion {
         spells.push_back(new RighteousFury(this));
         spells.push_back(new Intervention(this));
 
-        stats->setCurrentHealth(418f);
-        stats->setMaxHealth(418f);
-        stats->setCurrentMana(255f);
-        stats->setMaxMana(255f);
+        stats->setCurrentHealth(418.0f);
+        stats->setMaxHealth(418.0f);
+        stats->setCurrentMana(255.0f);
+        stats->setMaxMana(255.0f);
         stats->setBaseAd(53.3f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(21f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(21.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
         stats->setMp5(6.9f);
     }
 

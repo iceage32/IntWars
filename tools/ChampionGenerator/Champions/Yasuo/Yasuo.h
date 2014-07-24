@@ -16,17 +16,17 @@ class Yasuo : public Champion {
         spells.push_back(new SweepingBlade(this));
         spells.push_back(new LastBreath(this));
 
-        stats->setCurrentHealth(430f);
-        stats->setMaxHealth(430f);
-        stats->setCurrentMana(60f);
-        stats->setMaxMana(60f);
-        stats->setBaseAd(50f);
-        stats->setRange(175f);
-        stats->setMovementSpeed(350f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(5f);
-        stats->setMp5(0f);
+        stats->setCurrentHealth(430.0f);
+        stats->setMaxHealth(430.0f);
+        stats->setCurrentMana(60.0f);
+        stats->setMaxMana(60.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(175.0f);
+        stats->setMovementSpeed(350.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(5.0f);
+        stats->setMp5(0.0f);
     }
 
 };

@@ -11,11 +11,11 @@ class BioArcaneBarrage : public Spell {
 
     public:
     BioArcaneBarrage(Champion* owner) : Spell(ID_BIOARCANEBARRAGE, owner, 0.25f, 0) {
-        cooldown[0] = 17f;
-        cooldown[1] = 17f;
-        cooldown[2] = 17f;
-        cooldown[3] = 17f;
-        cooldown[4] = 17f;
+        cooldown[0] = 17.0f;
+        cooldown[1] = 17.0f;
+        cooldown[2] = 17.0f;
+        cooldown[3] = 17.0f;
+        cooldown[4] = 17.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class BioArcaneBarrage : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

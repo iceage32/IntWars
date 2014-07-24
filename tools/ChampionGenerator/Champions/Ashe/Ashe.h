@@ -16,15 +16,15 @@ class Ashe : public Champion {
         spells.push_back(new Hawkshot(this));
         spells.push_back(new EnchantedCrystalArrow(this));
 
-        stats->setCurrentHealth(395f);
-        stats->setMaxHealth(395f);
-        stats->setCurrentMana(173f);
-        stats->setMaxMana(173f);
+        stats->setCurrentHealth(395.0f);
+        stats->setMaxHealth(395.0f);
+        stats->setCurrentMana(173.0f);
+        stats->setMaxMana(173.0f);
         stats->setBaseAd(46.3f);
-        stats->setRange(600f);
-        stats->setMovementSpeed(325f);
+        stats->setRange(600.0f);
+        stats->setMovementSpeed(325.0f);
         stats->setArmor(15.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.3f);
     }

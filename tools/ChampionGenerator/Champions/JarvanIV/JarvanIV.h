@@ -16,17 +16,17 @@ class JarvanIV : public Champion {
         spells.push_back(new DemacianStandard(this));
         spells.push_back(new Cataclysm(this));
 
-        stats->setCurrentHealth(420f);
-        stats->setMaxHealth(420f);
-        stats->setCurrentMana(235f);
-        stats->setMaxMana(235f);
-        stats->setBaseAd(50f);
-        stats->setRange(175f);
-        stats->setMovementSpeed(340f);
-        stats->setArmor(18f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
-        stats->setMp5(6f);
+        stats->setCurrentHealth(420.0f);
+        stats->setMaxHealth(420.0f);
+        stats->setCurrentMana(235.0f);
+        stats->setMaxMana(235.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(175.0f);
+        stats->setMovementSpeed(340.0f);
+        stats->setArmor(18.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
+        stats->setMp5(6.0f);
     }
 
 };

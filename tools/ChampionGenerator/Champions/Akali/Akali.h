@@ -16,17 +16,17 @@ class Akali : public Champion {
         spells.push_back(new CrescentSlash(this));
         spells.push_back(new ShadowDance(this));
 
-        stats->setCurrentHealth(445f);
-        stats->setMaxHealth(445f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(53f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(350f);
+        stats->setCurrentHealth(445.0f);
+        stats->setMaxHealth(445.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(53.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(350.0f);
         stats->setArmor(20.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.25f);
-        stats->setMp5(50f);
+        stats->setMp5(50.0f);
     }
 
 };

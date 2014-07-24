@@ -11,11 +11,11 @@ class VaultBreaker : public Spell {
 
     public:
     VaultBreaker(Champion* owner) : Spell(ID_VAULTBREAKER, owner, 0.25f, 0) {
-        cooldown[0] = 18f;
+        cooldown[0] = 18.0f;
         cooldown[1] = 15.5f;
-        cooldown[2] = 13f;
+        cooldown[2] = 13.0f;
         cooldown[3] = 10.5f;
-        cooldown[4] = 8f;
+        cooldown[4] = 8.0f;
 
         cost[0] = 50;
         cost[1] = 60;
@@ -31,7 +31,7 @@ class VaultBreaker : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

@@ -16,15 +16,15 @@ class Graves : public Champion {
         spells.push_back(new Quickdraw(this));
         spells.push_back(new CollateralDamage(this));
 
-        stats->setCurrentHealth(410f);
-        stats->setMaxHealth(410f);
-        stats->setCurrentMana(255f);
-        stats->setMaxMana(255f);
-        stats->setBaseAd(51f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(330f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(410.0f);
+        stats->setMaxHealth(410.0f);
+        stats->setCurrentMana(255.0f);
+        stats->setMaxMana(255.0f);
+        stats->setBaseAd(51.0f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(330.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.5f);
         stats->setMp5(6.75f);
     }

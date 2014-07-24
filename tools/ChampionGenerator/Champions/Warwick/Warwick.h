@@ -16,15 +16,15 @@ class Warwick : public Champion {
         spells.push_back(new BloodScent(this));
         spells.push_back(new InfiniteDuress(this));
 
-        stats->setCurrentHealth(428f);
-        stats->setMaxHealth(428f);
-        stats->setCurrentMana(190f);
-        stats->setMaxMana(190f);
+        stats->setCurrentHealth(428.0f);
+        stats->setMaxHealth(428.0f);
+        stats->setCurrentMana(190.0f);
+        stats->setMaxMana(190.0f);
         stats->setBaseAd(56.76f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.05f);
         stats->setMp5(7.1f);
     }

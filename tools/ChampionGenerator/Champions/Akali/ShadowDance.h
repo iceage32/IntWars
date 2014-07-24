@@ -11,11 +11,11 @@ class ShadowDance : public Spell {
 
     public:
     ShadowDance(Champion* owner) : Spell(ID_SHADOWDANCE, owner, 0.25f, 0) {
-        cooldown[0] = 2f;
+        cooldown[0] = 2.0f;
         cooldown[1] = 1.5f;
-        cooldown[2] = 1f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[2] = 1.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class ShadowDance : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

@@ -11,11 +11,11 @@ class Shunpo : public Spell {
 
     public:
     Shunpo(Champion* owner) : Spell(ID_SHUNPO, owner, 0.25f, 0) {
-        cooldown[0] = 12f;
+        cooldown[0] = 12.0f;
         cooldown[1] = 10.5f;
-        cooldown[2] = 9f;
+        cooldown[2] = 9.0f;
         cooldown[3] = 7.5f;
-        cooldown[4] = 6f;
+        cooldown[4] = 6.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class Shunpo : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

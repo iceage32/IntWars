@@ -16,17 +16,17 @@ class Kennen : public Champion {
         spells.push_back(new LightningRush(this));
         spells.push_back(new SlicingMaelstrom(this));
 
-        stats->setCurrentHealth(403f);
-        stats->setMaxHealth(403f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(47f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(18f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(403.0f);
+        stats->setMaxHealth(403.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(47.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(18.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
-        stats->setMp5(50f);
+        stats->setMp5(50.0f);
     }
 
 };

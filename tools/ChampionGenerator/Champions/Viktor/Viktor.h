@@ -16,15 +16,15 @@ class Viktor : public Champion {
         spells.push_back(new DeathRay(this));
         spells.push_back(new ChaosStorm(this));
 
-        stats->setCurrentHealth(385f);
-        stats->setMaxHealth(385f);
-        stats->setCurrentMana(240f);
-        stats->setMaxMana(240f);
-        stats->setBaseAd(49f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(16f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(385.0f);
+        stats->setMaxHealth(385.0f);
+        stats->setCurrentMana(240.0f);
+        stats->setMaxMana(240.0f);
+        stats->setBaseAd(49.0f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(16.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.75f);
         stats->setMp5(6.9f);
     }

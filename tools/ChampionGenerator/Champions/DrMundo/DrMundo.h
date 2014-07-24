@@ -16,17 +16,17 @@ class DrMundo : public Champion {
         spells.push_back(new Masochism(this));
         spells.push_back(new Sadism(this));
 
-        stats->setCurrentHealth(433f);
-        stats->setMaxHealth(433f);
-        stats->setCurrentMana(0f);
-        stats->setMaxMana(0f);
+        stats->setCurrentHealth(433.0f);
+        stats->setMaxHealth(433.0f);
+        stats->setCurrentMana(0.0f);
+        stats->setMaxMana(0.0f);
         stats->setBaseAd(56.23f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(21f);
-        stats->setMagicArmor(30f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(21.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.5f);
-        stats->setMp5(0f);
+        stats->setMp5(0.0f);
     }
 
 };

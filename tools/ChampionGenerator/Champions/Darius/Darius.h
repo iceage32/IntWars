@@ -16,17 +16,17 @@ class Darius : public Champion {
         spells.push_back(new Apprehend(this));
         spells.push_back(new NoxianGuillotine(this));
 
-        stats->setCurrentHealth(426f);
-        stats->setMaxHealth(426f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(50f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(340f);
-        stats->setArmor(24f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(426.0f);
+        stats->setMaxHealth(426.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(340.0f);
+        stats->setArmor(24.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(8.25f);
-        stats->setMp5(6f);
+        stats->setMp5(6.0f);
     }
 
 };

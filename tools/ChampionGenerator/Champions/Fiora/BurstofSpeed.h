@@ -11,11 +11,11 @@ class BurstofSpeed : public Spell {
 
     public:
     BurstofSpeed(Champion* owner) : Spell(ID_BURSTOFSPEED, owner, 0.25f, 0) {
-        cooldown[0] = 15f;
-        cooldown[1] = 14f;
-        cooldown[2] = 13f;
-        cooldown[3] = 12f;
-        cooldown[4] = 11f;
+        cooldown[0] = 15.0f;
+        cooldown[1] = 14.0f;
+        cooldown[2] = 13.0f;
+        cooldown[3] = 12.0f;
+        cooldown[4] = 11.0f;
 
         cost[0] = 55;
         cost[1] = 55;
@@ -31,7 +31,7 @@ class BurstofSpeed : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

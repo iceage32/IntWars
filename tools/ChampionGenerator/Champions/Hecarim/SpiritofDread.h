@@ -11,11 +11,11 @@ class SpiritofDread : public Spell {
 
     public:
     SpiritofDread(Champion* owner) : Spell(ID_SPIRITOFDREAD, owner, 0.25f, 0) {
-        cooldown[0] = 22f;
-        cooldown[1] = 21f;
-        cooldown[2] = 20f;
-        cooldown[3] = 19f;
-        cooldown[4] = 18f;
+        cooldown[0] = 22.0f;
+        cooldown[1] = 21.0f;
+        cooldown[2] = 20.0f;
+        cooldown[3] = 19.0f;
+        cooldown[4] = 18.0f;
 
         cost[0] = 50;
         cost[1] = 60;
@@ -31,7 +31,7 @@ class SpiritofDread : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

@@ -16,17 +16,17 @@ class Jinx : public Champion {
         spells.push_back(new FlameChompers(this));
         spells.push_back(new SuperMegaDeathRocket(this));
 
-        stats->setCurrentHealth(380f);
-        stats->setMaxHealth(380f);
-        stats->setCurrentMana(170f);
-        stats->setMaxMana(170f);
-        stats->setBaseAd(50f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(17f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(5f);
-        stats->setMp5(5f);
+        stats->setCurrentHealth(380.0f);
+        stats->setMaxHealth(380.0f);
+        stats->setCurrentMana(170.0f);
+        stats->setMaxMana(170.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(17.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(5.0f);
+        stats->setMp5(5.0f);
     }
 
 };

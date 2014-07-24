@@ -16,17 +16,17 @@ class Irelia : public Champion {
         spells.push_back(new EquilibriumStrike(this));
         spells.push_back(new TranscendentBlades(this));
 
-        stats->setCurrentHealth(456f);
-        stats->setMaxHealth(456f);
-        stats->setCurrentMana(230f);
-        stats->setMaxMana(230f);
-        stats->setBaseAd(56f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(456.0f);
+        stats->setMaxHealth(456.0f);
+        stats->setCurrentMana(230.0f);
+        stats->setMaxMana(230.0f);
+        stats->setBaseAd(56.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.5f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

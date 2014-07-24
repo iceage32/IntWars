@@ -11,11 +11,11 @@ class Requiem : public Spell {
 
     public:
     Requiem(Champion* owner) : Spell(ID_REQUIEM, owner, 0.25f, 0) {
-        cooldown[0] = 200f;
-        cooldown[1] = 180f;
-        cooldown[2] = 160f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[0] = 200.0f;
+        cooldown[1] = 180.0f;
+        cooldown[2] = 160.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 150;
         cost[1] = 175;
@@ -31,7 +31,7 @@ class Requiem : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

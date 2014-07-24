@@ -11,11 +11,11 @@ class Fracture : public Spell {
 
     public:
     Fracture(Champion* owner) : Spell(ID_FRACTURE, owner, 0.25f, 0) {
-        cooldown[0] = 12f;
-        cooldown[1] = 12f;
-        cooldown[2] = 12f;
-        cooldown[3] = 12f;
-        cooldown[4] = 12f;
+        cooldown[0] = 12.0f;
+        cooldown[1] = 12.0f;
+        cooldown[2] = 12.0f;
+        cooldown[3] = 12.0f;
+        cooldown[4] = 12.0f;
 
         cost[0] = 50;
         cost[1] = 55;
@@ -31,7 +31,7 @@ class Fracture : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

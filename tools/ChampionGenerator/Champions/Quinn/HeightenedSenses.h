@@ -11,11 +11,11 @@ class HeightenedSenses : public Spell {
 
     public:
     HeightenedSenses(Champion* owner) : Spell(ID_HEIGHTENEDSENSES, owner, 0.25f, 0) {
-        cooldown[0] = 50f;
-        cooldown[1] = 45f;
-        cooldown[2] = 40f;
-        cooldown[3] = 35f;
-        cooldown[4] = 30f;
+        cooldown[0] = 50.0f;
+        cooldown[1] = 45.0f;
+        cooldown[2] = 40.0f;
+        cooldown[3] = 35.0f;
+        cooldown[4] = 30.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class HeightenedSenses : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

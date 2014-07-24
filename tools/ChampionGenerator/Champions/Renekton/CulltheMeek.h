@@ -11,11 +11,11 @@ class CulltheMeek : public Spell {
 
     public:
     CulltheMeek(Champion* owner) : Spell(ID_CULLTHEMEEK, owner, 0.25f, 0) {
-        cooldown[0] = 8f;
-        cooldown[1] = 8f;
-        cooldown[2] = 8f;
-        cooldown[3] = 8f;
-        cooldown[4] = 8f;
+        cooldown[0] = 8.0f;
+        cooldown[1] = 8.0f;
+        cooldown[2] = 8.0f;
+        cooldown[3] = 8.0f;
+        cooldown[4] = 8.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class CulltheMeek : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

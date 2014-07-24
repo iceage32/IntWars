@@ -16,17 +16,17 @@ class Diana : public Champion {
         spells.push_back(new Moonfall(this));
         spells.push_back(new LunarRush(this));
 
-        stats->setCurrentHealth(438f);
-        stats->setMaxHealth(438f);
-        stats->setCurrentMana(230f);
-        stats->setMaxMana(230f);
-        stats->setBaseAd(48f);
-        stats->setRange(150f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(6f);
-        stats->setMp5(7f);
+        stats->setCurrentHealth(438.0f);
+        stats->setMaxHealth(438.0f);
+        stats->setCurrentMana(230.0f);
+        stats->setMaxMana(230.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(150.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(6.0f);
+        stats->setMp5(7.0f);
     }
 
 };

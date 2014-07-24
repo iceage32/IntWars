@@ -11,11 +11,11 @@ class Transfusion : public Spell {
 
     public:
     Transfusion(Champion* owner) : Spell(ID_TRANSFUSION, owner, 0.25f, 0) {
-        cooldown[0] = 10f;
+        cooldown[0] = 10.0f;
         cooldown[1] = 8.5f;
-        cooldown[2] = 7f;
+        cooldown[2] = 7.0f;
         cooldown[3] = 5.5f;
-        cooldown[4] = 4f;
+        cooldown[4] = 4.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class Transfusion : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

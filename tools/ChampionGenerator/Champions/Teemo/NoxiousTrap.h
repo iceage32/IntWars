@@ -11,11 +11,11 @@ class NoxiousTrap : public Spell {
 
     public:
     NoxiousTrap(Champion* owner) : Spell(ID_NOXIOUSTRAP, owner, 0.25f, 0) {
-        cooldown[0] = 1f;
-        cooldown[1] = 1f;
-        cooldown[2] = 1f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[0] = 1.0f;
+        cooldown[1] = 1.0f;
+        cooldown[2] = 1.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 75;
         cost[1] = 100;
@@ -31,7 +31,7 @@ class NoxiousTrap : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

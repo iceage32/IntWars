@@ -16,15 +16,15 @@ class Soraka : public Champion {
         spells.push_back(new Infuse(this));
         spells.push_back(new Wish(this));
 
-        stats->setCurrentHealth(405f);
-        stats->setMaxHealth(405f);
-        stats->setCurrentMana(240f);
-        stats->setMaxMana(240f);
+        stats->setCurrentHealth(405.0f);
+        stats->setMaxHealth(405.0f);
+        stats->setCurrentMana(240.0f);
+        stats->setMaxMana(240.0f);
         stats->setBaseAd(48.8f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(340f);
-        stats->setArmor(17f);
-        stats->setMagicArmor(30f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(340.0f);
+        stats->setArmor(17.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.8f);
     }

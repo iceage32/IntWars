@@ -11,11 +11,11 @@ class EtherealChains : public Spell {
 
     public:
     EtherealChains(Champion* owner) : Spell(ID_ETHEREALCHAINS, owner, 0.25f, 0) {
-        cooldown[0] = 14f;
+        cooldown[0] = 14.0f;
         cooldown[1] = 12.5f;
-        cooldown[2] = 11f;
+        cooldown[2] = 11.0f;
         cooldown[3] = 9.5f;
-        cooldown[4] = 8f;
+        cooldown[4] = 8.0f;
 
         cost[0] = 80;
         cost[1] = 80;
@@ -31,7 +31,7 @@ class EtherealChains : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

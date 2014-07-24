@@ -16,16 +16,16 @@ class Hecarim : public Champion {
         spells.push_back(new DevastatingCharge(this));
         spells.push_back(new OnslaughtofShadows(this));
 
-        stats->setCurrentHealth(440f);
-        stats->setMaxHealth(440f);
-        stats->setCurrentMana(210f);
-        stats->setMaxMana(210f);
-        stats->setBaseAd(56f);
-        stats->setRange(175f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(8f);
+        stats->setCurrentHealth(440.0f);
+        stats->setMaxHealth(440.0f);
+        stats->setCurrentMana(210.0f);
+        stats->setMaxMana(210.0f);
+        stats->setBaseAd(56.0f);
+        stats->setRange(175.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(8.0f);
         stats->setMp5(6.5f);
     }
 

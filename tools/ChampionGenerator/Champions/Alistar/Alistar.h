@@ -16,15 +16,15 @@ class Alistar : public Champion {
         spells.push_back(new TriumphantRoar(this));
         spells.push_back(new UnbreakableWill(this));
 
-        stats->setCurrentHealth(442f);
-        stats->setMaxHealth(442f);
-        stats->setCurrentMana(215f);
-        stats->setMaxMana(215f);
+        stats->setCurrentHealth(442.0f);
+        stats->setMaxHealth(442.0f);
+        stats->setCurrentMana(215.0f);
+        stats->setMaxMana(215.0f);
         stats->setBaseAd(55.03f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(330f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(330.0f);
         stats->setArmor(18.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.25f);
         stats->setMp5(6.45f);
     }

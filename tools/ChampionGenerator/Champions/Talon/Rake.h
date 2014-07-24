@@ -11,11 +11,11 @@ class Rake : public Spell {
 
     public:
     Rake(Champion* owner) : Spell(ID_RAKE, owner, 0.25f, 0) {
-        cooldown[0] = 10f;
-        cooldown[1] = 10f;
-        cooldown[2] = 10f;
-        cooldown[3] = 10f;
-        cooldown[4] = 10f;
+        cooldown[0] = 10.0f;
+        cooldown[1] = 10.0f;
+        cooldown[2] = 10.0f;
+        cooldown[3] = 10.0f;
+        cooldown[4] = 10.0f;
 
         cost[0] = 60;
         cost[1] = 65;
@@ -31,7 +31,7 @@ class Rake : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

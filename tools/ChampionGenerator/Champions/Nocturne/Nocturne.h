@@ -16,17 +16,17 @@ class Nocturne : public Champion {
         spells.push_back(new UnspeakableHorror(this));
         spells.push_back(new Paranoia(this));
 
-        stats->setCurrentHealth(440f);
-        stats->setMaxHealth(440f);
-        stats->setCurrentMana(215f);
-        stats->setMaxMana(215f);
-        stats->setBaseAd(54f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(21f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
-        stats->setMp5(6f);
+        stats->setCurrentHealth(440.0f);
+        stats->setMaxHealth(440.0f);
+        stats->setCurrentMana(215.0f);
+        stats->setMaxMana(215.0f);
+        stats->setBaseAd(54.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(21.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
+        stats->setMp5(6.0f);
     }
 
 };

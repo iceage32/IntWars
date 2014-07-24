@@ -16,15 +16,15 @@ class Talon : public Champion {
         spells.push_back(new Cutthroat(this));
         spells.push_back(new ShadowAssault(this));
 
-        stats->setCurrentHealth(440f);
-        stats->setMaxHealth(440f);
-        stats->setCurrentMana(260f);
-        stats->setMaxMana(260f);
-        stats->setBaseAd(50f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(350f);
-        stats->setArmor(21f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(440.0f);
+        stats->setMaxHealth(440.0f);
+        stats->setCurrentMana(260.0f);
+        stats->setMaxMana(260.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(350.0f);
+        stats->setArmor(21.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.25f);
         stats->setMp5(6.75f);
     }

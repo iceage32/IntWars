@@ -16,17 +16,17 @@ class Rammus : public Champion {
         spells.push_back(new PuncturingTaunt(this));
         spells.push_back(new Tremors(this));
 
-        stats->setCurrentHealth(420f);
-        stats->setMaxHealth(420f);
-        stats->setCurrentMana(255f);
-        stats->setMaxMana(255f);
-        stats->setBaseAd(50f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(25f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
-        stats->setMp5(7f);
+        stats->setCurrentHealth(420.0f);
+        stats->setMaxHealth(420.0f);
+        stats->setCurrentMana(255.0f);
+        stats->setMaxMana(255.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(25.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
+        stats->setMp5(7.0f);
     }
 
 };

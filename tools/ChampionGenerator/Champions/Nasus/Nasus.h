@@ -16,15 +16,15 @@ class Nasus : public Champion {
         spells.push_back(new SpiritFire(this));
         spells.push_back(new FuryoftheSands(this));
 
-        stats->setCurrentHealth(410f);
-        stats->setMaxHealth(410f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
+        stats->setCurrentHealth(410.0f);
+        stats->setMaxHealth(410.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
         stats->setBaseAd(53.3f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(350f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(350.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.5f);
         stats->setMp5(6.6f);
     }

@@ -16,15 +16,15 @@ class Urgot : public Champion {
         spells.push_back(new NoxianCorrosiveCharge(this));
         spells.push_back(new HyperKineticPositionReverser(this));
 
-        stats->setCurrentHealth(437f);
-        stats->setMaxHealth(437f);
-        stats->setCurrentMana(220f);
-        stats->setMaxMana(220f);
-        stats->setBaseAd(48f);
-        stats->setRange(425f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(437.0f);
+        stats->setMaxHealth(437.0f);
+        stats->setCurrentMana(220.0f);
+        stats->setMaxMana(220.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(425.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.5f);
         stats->setMp5(7.5f);
     }

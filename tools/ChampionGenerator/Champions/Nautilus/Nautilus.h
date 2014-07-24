@@ -16,15 +16,15 @@ class Nautilus : public Champion {
         spells.push_back(new Riptide(this));
         spells.push_back(new DepthCharge(this));
 
-        stats->setCurrentHealth(432f);
-        stats->setMaxHealth(432f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(52f);
-        stats->setRange(175f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(21f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(432.0f);
+        stats->setMaxHealth(432.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(52.0f);
+        stats->setRange(175.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(21.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.45f);
         stats->setMp5(7.45f);
     }

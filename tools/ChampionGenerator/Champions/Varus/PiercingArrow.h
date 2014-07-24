@@ -11,11 +11,11 @@ class PiercingArrow : public Spell {
 
     public:
     PiercingArrow(Champion* owner) : Spell(ID_PIERCINGARROW, owner, 0.25f, 0) {
-        cooldown[0] = 16f;
-        cooldown[1] = 14f;
-        cooldown[2] = 12f;
-        cooldown[3] = 10f;
-        cooldown[4] = 8f;
+        cooldown[0] = 16.0f;
+        cooldown[1] = 14.0f;
+        cooldown[2] = 12.0f;
+        cooldown[3] = 10.0f;
+        cooldown[4] = 8.0f;
 
         cost[0] = 70;
         cost[1] = 75;
@@ -31,7 +31,7 @@ class PiercingArrow : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

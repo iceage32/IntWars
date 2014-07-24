@@ -11,11 +11,11 @@ class YordleSnapTrap : public Spell {
 
     public:
     YordleSnapTrap(Champion* owner) : Spell(ID_YORDLESNAPTRAP, owner, 0.25f, 0) {
-        cooldown[0] = 20f;
-        cooldown[1] = 17f;
-        cooldown[2] = 14f;
-        cooldown[3] = 11f;
-        cooldown[4] = 8f;
+        cooldown[0] = 20.0f;
+        cooldown[1] = 17.0f;
+        cooldown[2] = 14.0f;
+        cooldown[3] = 11.0f;
+        cooldown[4] = 8.0f;
 
         cost[0] = 50;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class YordleSnapTrap : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

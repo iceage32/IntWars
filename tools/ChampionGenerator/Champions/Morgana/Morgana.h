@@ -16,15 +16,15 @@ class Morgana : public Champion {
         spells.push_back(new BlackShield(this));
         spells.push_back(new SoulShackles(this));
 
-        stats->setCurrentHealth(403f);
-        stats->setMaxHealth(403f);
-        stats->setCurrentMana(240f);
-        stats->setMaxMana(240f);
+        stats->setCurrentHealth(403.0f);
+        stats->setMaxHealth(403.0f);
+        stats->setCurrentMana(240.0f);
+        stats->setMaxMana(240.0f);
         stats->setBaseAd(51.58f);
-        stats->setRange(450f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setRange(450.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.7f);
         stats->setMp5(6.8f);
     }

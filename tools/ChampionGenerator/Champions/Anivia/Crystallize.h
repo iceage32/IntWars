@@ -11,11 +11,11 @@ class Crystallize : public Spell {
 
     public:
     Crystallize(Champion* owner) : Spell(ID_CRYSTALLIZE, owner, 0.25f, 0) {
-        cooldown[0] = 25f;
-        cooldown[1] = 25f;
-        cooldown[2] = 25f;
-        cooldown[3] = 25f;
-        cooldown[4] = 25f;
+        cooldown[0] = 25.0f;
+        cooldown[1] = 25.0f;
+        cooldown[2] = 25.0f;
+        cooldown[3] = 25.0f;
+        cooldown[4] = 25.0f;
 
         cost[0] = 70;
         cost[1] = 70;
@@ -31,7 +31,7 @@ class Crystallize : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

@@ -16,16 +16,16 @@ class Fizz : public Champion {
         spells.push_back(new PlayfulTrickster(this));
         spells.push_back(new ChumtheWaters(this));
 
-        stats->setCurrentHealth(414f);
-        stats->setMaxHealth(414f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(53f);
-        stats->setRange(175f);
-        stats->setMovementSpeed(335f);
+        stats->setCurrentHealth(414.0f);
+        stats->setMaxHealth(414.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(53.0f);
+        stats->setRange(175.0f);
+        stats->setMovementSpeed(335.0f);
         stats->setArmor(16.7f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
         stats->setMp5(6.1f);
     }
 

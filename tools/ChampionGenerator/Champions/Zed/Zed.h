@@ -16,17 +16,17 @@ class Zed : public Champion {
         spells.push_back(new ShadowSlash(this));
         spells.push_back(new DeathMark(this));
 
-        stats->setCurrentHealth(445f);
-        stats->setMaxHealth(445f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(49f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(21f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(6f);
-        stats->setMp5(50f);
+        stats->setCurrentHealth(445.0f);
+        stats->setMaxHealth(445.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(49.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(21.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(6.0f);
+        stats->setMp5(50.0f);
     }
 
 };

@@ -16,15 +16,15 @@ class Sivir : public Champion {
         spells.push_back(new SpellShield(this));
         spells.push_back(new OnTheHunt(this));
 
-        stats->setCurrentHealth(378f);
-        stats->setMaxHealth(378f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(49f);
-        stats->setRange(500f);
-        stats->setMovementSpeed(335f);
+        stats->setCurrentHealth(378.0f);
+        stats->setMaxHealth(378.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(49.0f);
+        stats->setRange(500.0f);
+        stats->setMovementSpeed(335.0f);
         stats->setArmor(16.75f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.25f);
         stats->setMp5(6.5f);
     }

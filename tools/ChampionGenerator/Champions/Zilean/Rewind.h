@@ -11,11 +11,11 @@ class Rewind : public Spell {
 
     public:
     Rewind(Champion* owner) : Spell(ID_REWIND, owner, 0.25f, 0) {
-        cooldown[0] = 18f;
-        cooldown[1] = 15f;
-        cooldown[2] = 12f;
-        cooldown[3] = 9f;
-        cooldown[4] = 6f;
+        cooldown[0] = 18.0f;
+        cooldown[1] = 15.0f;
+        cooldown[2] = 12.0f;
+        cooldown[3] = 9.0f;
+        cooldown[4] = 6.0f;
 
         cost[0] = 50;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class Rewind : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

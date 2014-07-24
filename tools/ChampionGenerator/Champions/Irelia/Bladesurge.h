@@ -11,11 +11,11 @@ class Bladesurge : public Spell {
 
     public:
     Bladesurge(Champion* owner) : Spell(ID_BLADESURGE, owner, 0.25f, 0) {
-        cooldown[0] = 14f;
-        cooldown[1] = 12f;
-        cooldown[2] = 10f;
-        cooldown[3] = 8f;
-        cooldown[4] = 6f;
+        cooldown[0] = 14.0f;
+        cooldown[1] = 12.0f;
+        cooldown[2] = 10.0f;
+        cooldown[3] = 8.0f;
+        cooldown[4] = 6.0f;
 
         cost[0] = 60;
         cost[1] = 65;
@@ -31,7 +31,7 @@ class Bladesurge : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

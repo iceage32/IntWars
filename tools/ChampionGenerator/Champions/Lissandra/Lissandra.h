@@ -16,17 +16,17 @@ class Lissandra : public Champion {
         spells.push_back(new GlacialPath(this));
         spells.push_back(new FrozenTomb(this));
 
-        stats->setCurrentHealth(365f);
-        stats->setMaxHealth(365f);
-        stats->setCurrentMana(220f);
-        stats->setMaxMana(220f);
-        stats->setBaseAd(48f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(14f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(6f);
-        stats->setMp5(5f);
+        stats->setCurrentHealth(365.0f);
+        stats->setMaxHealth(365.0f);
+        stats->setCurrentMana(220.0f);
+        stats->setMaxMana(220.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(14.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(6.0f);
+        stats->setMp5(5.0f);
     }
 
 };

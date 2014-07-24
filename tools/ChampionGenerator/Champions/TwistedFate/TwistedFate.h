@@ -16,15 +16,15 @@ class TwistedFate : public Champion {
         spells.push_back(new StackedDeck(this));
         spells.push_back(new Destiny(this));
 
-        stats->setCurrentHealth(384f);
-        stats->setMaxHealth(384f);
-        stats->setCurrentMana(202f);
-        stats->setMaxMana(202f);
+        stats->setCurrentHealth(384.0f);
+        stats->setMaxHealth(384.0f);
+        stats->setCurrentMana(202.0f);
+        stats->setMaxMana(202.0f);
         stats->setBaseAd(46.41f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(330f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(330.0f);
         stats->setArmor(15.25f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.5f);
     }

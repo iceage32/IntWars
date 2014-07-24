@@ -11,11 +11,11 @@ class CommandAttack : public Spell {
 
     public:
     CommandAttack(Champion* owner) : Spell(ID_COMMANDATTACK, owner, 0.25f, 0) {
-        cooldown[0] = 6f;
+        cooldown[0] = 6.0f;
         cooldown[1] = 5.25f;
         cooldown[2] = 4.5f;
         cooldown[3] = 3.75f;
-        cooldown[4] = 3f;
+        cooldown[4] = 3.0f;
 
         cost[0] = 50;
         cost[1] = 50;
@@ -31,7 +31,7 @@ class CommandAttack : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

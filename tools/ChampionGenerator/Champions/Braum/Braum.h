@@ -16,15 +16,15 @@ class Braum : public Champion {
         spells.push_back(new Unbreakable(this));
         spells.push_back(new GlacialFissure(this));
 
-        stats->setCurrentHealth(430f);
-        stats->setMaxHealth(430f);
-        stats->setCurrentMana(235f);
-        stats->setMaxMana(235f);
-        stats->setBaseAd(50f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(430.0f);
+        stats->setMaxHealth(430.0f);
+        stats->setCurrentMana(235.0f);
+        stats->setMaxMana(235.0f);
+        stats->setBaseAd(50.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.5f);
         stats->setMp5(5.5f);
     }

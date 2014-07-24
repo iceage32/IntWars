@@ -11,11 +11,11 @@ class TwinFang : public Spell {
 
     public:
     TwinFang(Champion* owner) : Spell(ID_TWINFANG, owner, 0.25f, 0) {
-        cooldown[0] = 5f;
-        cooldown[1] = 5f;
-        cooldown[2] = 5f;
-        cooldown[3] = 5f;
-        cooldown[4] = 5f;
+        cooldown[0] = 5.0f;
+        cooldown[1] = 5.0f;
+        cooldown[2] = 5.0f;
+        cooldown[3] = 5.0f;
+        cooldown[4] = 5.0f;
 
         cost[0] = 50;
         cost[1] = 60;
@@ -31,7 +31,7 @@ class TwinFang : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

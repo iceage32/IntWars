@@ -11,11 +11,11 @@ class ArcaneShift : public Spell {
 
     public:
     ArcaneShift(Champion* owner) : Spell(ID_ARCANESHIFT, owner, 0.25f, 0) {
-        cooldown[0] = 19f;
-        cooldown[1] = 17f;
-        cooldown[2] = 15f;
-        cooldown[3] = 13f;
-        cooldown[4] = 11f;
+        cooldown[0] = 19.0f;
+        cooldown[1] = 17.0f;
+        cooldown[2] = 15.0f;
+        cooldown[3] = 13.0f;
+        cooldown[4] = 11.0f;
 
         cost[0] = 90;
         cost[1] = 90;
@@ -31,7 +31,7 @@ class ArcaneShift : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

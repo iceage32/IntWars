@@ -11,11 +11,11 @@ class TimeWarp : public Spell {
 
     public:
     TimeWarp(Champion* owner) : Spell(ID_TIMEWARP, owner, 0.25f, 0) {
-        cooldown[0] = 20f;
-        cooldown[1] = 20f;
-        cooldown[2] = 20f;
-        cooldown[3] = 20f;
-        cooldown[4] = 20f;
+        cooldown[0] = 20.0f;
+        cooldown[1] = 20.0f;
+        cooldown[2] = 20.0f;
+        cooldown[3] = 20.0f;
+        cooldown[4] = 20.0f;
 
         cost[0] = 80;
         cost[1] = 80;
@@ -31,7 +31,7 @@ class TimeWarp : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

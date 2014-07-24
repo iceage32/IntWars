@@ -11,11 +11,11 @@ class LightningRush : public Spell {
 
     public:
     LightningRush(Champion* owner) : Spell(ID_LIGHTNINGRUSH, owner, 0.25f, 0) {
-        cooldown[0] = 10f;
-        cooldown[1] = 9f;
-        cooldown[2] = 8f;
-        cooldown[3] = 7f;
-        cooldown[4] = 6f;
+        cooldown[0] = 10.0f;
+        cooldown[1] = 9.0f;
+        cooldown[2] = 8.0f;
+        cooldown[3] = 7.0f;
+        cooldown[4] = 6.0f;
 
         cost[0] = 100;
         cost[1] = 95;
@@ -31,7 +31,7 @@ class LightningRush : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

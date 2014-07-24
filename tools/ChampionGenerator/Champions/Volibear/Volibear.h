@@ -16,17 +16,17 @@ class Volibear : public Champion {
         spells.push_back(new MajesticRoar(this));
         spells.push_back(new ThunderClaws(this));
 
-        stats->setCurrentHealth(440f);
-        stats->setMaxHealth(440f);
-        stats->setCurrentMana(220f);
-        stats->setMaxMana(220f);
-        stats->setBaseAd(54f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
+        stats->setCurrentHealth(440.0f);
+        stats->setMaxHealth(440.0f);
+        stats->setCurrentMana(220.0f);
+        stats->setMaxMana(220.0f);
+        stats->setBaseAd(54.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
         stats->setArmor(20.5f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
-        stats->setMp5(7f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
+        stats->setMp5(7.0f);
     }
 
 };

@@ -16,17 +16,17 @@ class Rengar : public Champion {
         spells.push_back(new BolaStrike(this));
         spells.push_back(new ThrilloftheHunt(this));
 
-        stats->setCurrentHealth(435f);
-        stats->setMaxHealth(435f);
-        stats->setCurrentMana(5f);
-        stats->setMaxMana(5f);
-        stats->setBaseAd(55f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(435.0f);
+        stats->setMaxHealth(435.0f);
+        stats->setCurrentMana(5.0f);
+        stats->setMaxMana(5.0f);
+        stats->setBaseAd(55.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(3.6f);
-        stats->setMp5(0f);
+        stats->setMp5(0.0f);
     }
 
 };

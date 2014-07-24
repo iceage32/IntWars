@@ -16,17 +16,17 @@ class Ezreal : public Champion {
         spells.push_back(new ArcaneShift(this));
         spells.push_back(new TrueshotBarrage(this));
 
-        stats->setCurrentHealth(350f);
-        stats->setMaxHealth(350f);
-        stats->setCurrentMana(235f);
-        stats->setMaxMana(235f);
+        stats->setCurrentHealth(350.0f);
+        stats->setMaxHealth(350.0f);
+        stats->setCurrentMana(235.0f);
+        stats->setMaxMana(235.0f);
         stats->setBaseAd(47.2f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(16f);
-        stats->setMagicArmor(30f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(16.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.5f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

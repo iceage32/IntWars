@@ -11,11 +11,11 @@ class BlindingDart : public Spell {
 
     public:
     BlindingDart(Champion* owner) : Spell(ID_BLINDINGDART, owner, 0.25f, 0) {
-        cooldown[0] = 8f;
-        cooldown[1] = 8f;
-        cooldown[2] = 8f;
-        cooldown[3] = 8f;
-        cooldown[4] = 8f;
+        cooldown[0] = 8.0f;
+        cooldown[1] = 8.0f;
+        cooldown[2] = 8.0f;
+        cooldown[3] = 8.0f;
+        cooldown[4] = 8.0f;
 
         cost[0] = 70;
         cost[1] = 80;
@@ -31,7 +31,7 @@ class BlindingDart : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

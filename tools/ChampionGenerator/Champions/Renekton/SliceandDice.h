@@ -11,11 +11,11 @@ class SliceandDice : public Spell {
 
     public:
     SliceandDice(Champion* owner) : Spell(ID_SLICEANDDICE, owner, 0.25f, 0) {
-        cooldown[0] = 18f;
-        cooldown[1] = 17f;
-        cooldown[2] = 16f;
-        cooldown[3] = 15f;
-        cooldown[4] = 14f;
+        cooldown[0] = 18.0f;
+        cooldown[1] = 17.0f;
+        cooldown[2] = 16.0f;
+        cooldown[3] = 15.0f;
+        cooldown[4] = 14.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class SliceandDice : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

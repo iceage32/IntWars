@@ -11,11 +11,11 @@ class ElasticSlingshot : public Spell {
 
     public:
     ElasticSlingshot(Champion* owner) : Spell(ID_ELASTICSLINGSHOT, owner, 0.25f, 0) {
-        cooldown[0] = 24f;
-        cooldown[1] = 21f;
-        cooldown[2] = 18f;
-        cooldown[3] = 15f;
-        cooldown[4] = 12f;
+        cooldown[0] = 24.0f;
+        cooldown[1] = 21.0f;
+        cooldown[2] = 18.0f;
+        cooldown[3] = 15.0f;
+        cooldown[4] = 12.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class ElasticSlingshot : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

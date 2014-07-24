@@ -16,17 +16,17 @@ class Lulu : public Champion {
         spells.push_back(new HelpPix(this));
         spells.push_back(new WildGrowth(this));
 
-        stats->setCurrentHealth(415f);
-        stats->setMaxHealth(415f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
-        stats->setBaseAd(44f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(13f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(5f);
-        stats->setMp5(5f);
+        stats->setCurrentHealth(415.0f);
+        stats->setMaxHealth(415.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
+        stats->setBaseAd(44.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(13.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(5.0f);
+        stats->setMp5(5.0f);
     }
 
 };

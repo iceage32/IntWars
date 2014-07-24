@@ -16,15 +16,15 @@ class Cassiopeia : public Champion {
         spells.push_back(new TwinFang(this));
         spells.push_back(new PetrifyingGaze(this));
 
-        stats->setCurrentHealth(380f);
-        stats->setMaxHealth(380f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(47f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(335f);
+        stats->setCurrentHealth(380.0f);
+        stats->setMaxHealth(380.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(47.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(335.0f);
         stats->setArmor(15.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.85f);
         stats->setMp5(7.1f);
     }

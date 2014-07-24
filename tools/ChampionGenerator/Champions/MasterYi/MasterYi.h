@@ -16,15 +16,15 @@ class MasterYi : public Champion {
         spells.push_back(new WujuStyle(this));
         spells.push_back(new Highlander(this));
 
-        stats->setCurrentHealth(444f);
-        stats->setMaxHealth(444f);
-        stats->setCurrentMana(180f);
-        stats->setMaxMana(180f);
-        stats->setBaseAd(55f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(355f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(444.0f);
+        stats->setMaxHealth(444.0f);
+        stats->setCurrentMana(180.0f);
+        stats->setMaxMana(180.0f);
+        stats->setBaseAd(55.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(355.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.5f);
         stats->setMp5(6.5f);
     }

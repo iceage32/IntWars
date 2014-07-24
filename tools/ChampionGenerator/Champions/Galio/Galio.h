@@ -16,17 +16,17 @@ class Galio : public Champion {
         spells.push_back(new RighteousGust(this));
         spells.push_back(new IdolofDurand(this));
 
-        stats->setCurrentHealth(435f);
-        stats->setMaxHealth(435f);
-        stats->setCurrentMana(235f);
-        stats->setMaxMana(235f);
+        stats->setCurrentHealth(435.0f);
+        stats->setMaxHealth(435.0f);
+        stats->setCurrentMana(235.0f);
+        stats->setMaxMana(235.0f);
         stats->setBaseAd(56.3f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(21f);
-        stats->setMagicArmor(30f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(21.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.45f);
-        stats->setMp5(7f);
+        stats->setMp5(7.0f);
     }
 
 };

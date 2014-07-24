@@ -16,16 +16,16 @@ class XinZhao : public Champion {
         spells.push_back(new AudaciousCharge(this));
         spells.push_back(new CrescentSweep(this));
 
-        stats->setCurrentHealth(445f);
-        stats->setMaxHealth(445f);
-        stats->setCurrentMana(215f);
-        stats->setMaxMana(215f);
-        stats->setBaseAd(52f);
-        stats->setRange(175f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(20f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
+        stats->setCurrentHealth(445.0f);
+        stats->setMaxHealth(445.0f);
+        stats->setCurrentMana(215.0f);
+        stats->setMaxMana(215.0f);
+        stats->setBaseAd(52.0f);
+        stats->setRange(175.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(20.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
         stats->setMp5(6.5f);
     }
 

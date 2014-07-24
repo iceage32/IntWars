@@ -16,17 +16,17 @@ class Shen : public Champion {
         spells.push_back(new ShadowDash(this));
         spells.push_back(new StandUnited(this));
 
-        stats->setCurrentHealth(428f);
-        stats->setMaxHealth(428f);
-        stats->setCurrentMana(200f);
-        stats->setMaxMana(200f);
+        stats->setCurrentHealth(428.0f);
+        stats->setMaxHealth(428.0f);
+        stats->setCurrentMana(200.0f);
+        stats->setMaxMana(200.0f);
         stats->setBaseAd(54.5f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.45f);
-        stats->setMp5(50f);
+        stats->setMp5(50.0f);
     }
 
 };

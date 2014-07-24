@@ -11,11 +11,11 @@ class RocketJump : public Spell {
 
     public:
     RocketJump(Champion* owner) : Spell(ID_ROCKETJUMP, owner, 0.25f, 0) {
-        cooldown[0] = 22f;
-        cooldown[1] = 20f;
-        cooldown[2] = 18f;
-        cooldown[3] = 16f;
-        cooldown[4] = 14f;
+        cooldown[0] = 22.0f;
+        cooldown[1] = 20.0f;
+        cooldown[2] = 18.0f;
+        cooldown[3] = 16.0f;
+        cooldown[4] = 14.0f;
 
         cost[0] = 60;
         cost[1] = 60;
@@ -31,7 +31,7 @@ class RocketJump : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

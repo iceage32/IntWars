@@ -16,15 +16,15 @@ class Quinn : public Champion {
         spells.push_back(new Vault(this));
         spells.push_back(new TagTeam(this));
 
-        stats->setCurrentHealth(390f);
-        stats->setMaxHealth(390f);
-        stats->setCurrentMana(210f);
-        stats->setMaxMana(210f);
-        stats->setBaseAd(48f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(335f);
+        stats->setCurrentHealth(390.0f);
+        stats->setMaxHealth(390.0f);
+        stats->setCurrentMana(210.0f);
+        stats->setMaxMana(210.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(335.0f);
         stats->setArmor(17.5f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.3f);
     }

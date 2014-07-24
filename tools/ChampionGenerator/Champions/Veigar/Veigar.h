@@ -16,15 +16,15 @@ class Veigar : public Champion {
         spells.push_back(new EventHorizon(this));
         spells.push_back(new PrimordialBurst(this));
 
-        stats->setCurrentHealth(355f);
-        stats->setMaxHealth(355f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
+        stats->setCurrentHealth(355.0f);
+        stats->setMaxHealth(355.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
         stats->setBaseAd(48.3f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(340f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(340.0f);
         stats->setArmor(16.25f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.9f);
     }

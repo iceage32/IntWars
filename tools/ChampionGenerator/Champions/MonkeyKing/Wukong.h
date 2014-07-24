@@ -16,15 +16,15 @@ class Wukong : public Champion {
         spells.push_back(new NimbusStrike(this));
         spells.push_back(new Cyclone(this));
 
-        stats->setCurrentHealth(435f);
-        stats->setMaxHealth(435f);
-        stats->setCurrentMana(202f);
-        stats->setMaxMana(202f);
+        stats->setCurrentHealth(435.0f);
+        stats->setMaxHealth(435.0f);
+        stats->setCurrentMana(202.0f);
+        stats->setMaxMana(202.0f);
         stats->setBaseAd(54.5f);
-        stats->setRange(175f);
-        stats->setMovementSpeed(345f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setRange(175.0f);
+        stats->setMovementSpeed(345.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.1f);
         stats->setMp5(6.95f);
     }

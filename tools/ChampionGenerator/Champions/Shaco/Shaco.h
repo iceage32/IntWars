@@ -16,15 +16,15 @@ class Shaco : public Champion {
         spells.push_back(new TwoShivPoison(this));
         spells.push_back(new Hallucinate(this));
 
-        stats->setCurrentHealth(441f);
-        stats->setMaxHealth(441f);
-        stats->setCurrentMana(230f);
-        stats->setMaxMana(230f);
+        stats->setCurrentHealth(441.0f);
+        stats->setMaxHealth(441.0f);
+        stats->setCurrentMana(230.0f);
+        stats->setMaxMana(230.0f);
         stats->setBaseAd(51.7f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(350f);
-        stats->setArmor(19f);
-        stats->setMagicArmor(30f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(350.0f);
+        stats->setArmor(19.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(7.45f);
         stats->setMp5(6.4f);
     }

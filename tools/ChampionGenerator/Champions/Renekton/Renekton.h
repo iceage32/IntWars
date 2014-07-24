@@ -16,17 +16,17 @@ class Renekton : public Champion {
         spells.push_back(new SliceandDice(this));
         spells.push_back(new Dominus(this));
 
-        stats->setCurrentHealth(426f);
-        stats->setMaxHealth(426f);
-        stats->setCurrentMana(100f);
-        stats->setMaxMana(100f);
+        stats->setCurrentHealth(426.0f);
+        stats->setMaxHealth(426.0f);
+        stats->setCurrentMana(100.0f);
+        stats->setMaxMana(100.0f);
         stats->setBaseAd(53.12f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(345f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(345.0f);
         stats->setArmor(19.2f);
-        stats->setMagicArmor(30f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(6.7f);
-        stats->setMp5(0f);
+        stats->setMp5(0.0f);
     }
 
 };

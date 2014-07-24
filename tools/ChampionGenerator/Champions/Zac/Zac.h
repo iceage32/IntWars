@@ -16,17 +16,17 @@ class Zac : public Champion {
         spells.push_back(new ElasticSlingshot(this));
         spells.push_back(new LetsBounce(this));
 
-        stats->setCurrentHealth(455f);
-        stats->setMaxHealth(455f);
-        stats->setCurrentMana(0f);
-        stats->setMaxMana(0f);
-        stats->setBaseAd(54f);
-        stats->setRange(125f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(18f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(7f);
-        stats->setMp5(0f);
+        stats->setCurrentHealth(455.0f);
+        stats->setMaxHealth(455.0f);
+        stats->setCurrentMana(0.0f);
+        stats->setMaxMana(0.0f);
+        stats->setBaseAd(54.0f);
+        stats->setRange(125.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(18.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(7.0f);
+        stats->setMp5(0.0f);
     }
 
 };

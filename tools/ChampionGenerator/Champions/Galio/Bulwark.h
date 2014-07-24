@@ -11,11 +11,11 @@ class Bulwark : public Spell {
 
     public:
     Bulwark(Champion* owner) : Spell(ID_BULWARK, owner, 0.25f, 0) {
-        cooldown[0] = 13f;
-        cooldown[1] = 13f;
-        cooldown[2] = 13f;
-        cooldown[3] = 13f;
-        cooldown[4] = 13f;
+        cooldown[0] = 13.0f;
+        cooldown[1] = 13.0f;
+        cooldown[2] = 13.0f;
+        cooldown[3] = 13.0f;
+        cooldown[4] = 13.0f;
 
         cost[0] = 60;
         cost[1] = 60;
@@ -31,7 +31,7 @@ class Bulwark : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

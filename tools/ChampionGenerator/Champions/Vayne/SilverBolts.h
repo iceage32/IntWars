@@ -11,11 +11,11 @@ class SilverBolts : public Spell {
 
     public:
     SilverBolts(Champion* owner) : Spell(ID_SILVERBOLTS, owner, 0.25f, 0) {
-        cooldown[0] = 0f;
-        cooldown[1] = 0f;
-        cooldown[2] = 0f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[0] = 0.0f;
+        cooldown[1] = 0.0f;
+        cooldown[2] = 0.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 55;
         cost[1] = 60;
@@ -31,7 +31,7 @@ class SilverBolts : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

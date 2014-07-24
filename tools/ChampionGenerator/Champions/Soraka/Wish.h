@@ -11,11 +11,11 @@ class Wish : public Spell {
 
     public:
     Wish(Champion* owner) : Spell(ID_WISH, owner, 0.25f, 0) {
-        cooldown[0] = 160f;
-        cooldown[1] = 145f;
-        cooldown[2] = 130f;
-        cooldown[3] = 0f;
-        cooldown[4] = 0f;
+        cooldown[0] = 160.0f;
+        cooldown[1] = 145.0f;
+        cooldown[2] = 130.0f;
+        cooldown[3] = 0.0f;
+        cooldown[4] = 0.0f;
 
         cost[0] = 100;
         cost[1] = 100;
@@ -31,7 +31,7 @@ class Wish : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

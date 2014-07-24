@@ -16,15 +16,15 @@ class Nami : public Champion {
         spells.push_back(new TidecallersBlessing(this));
         spells.push_back(new TidalWave(this));
 
-        stats->setCurrentHealth(365f);
-        stats->setMaxHealth(365f);
-        stats->setCurrentMana(305f);
-        stats->setMaxMana(305f);
-        stats->setBaseAd(48f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(340f);
-        stats->setArmor(13f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(365.0f);
+        stats->setMaxHealth(365.0f);
+        stats->setCurrentMana(305.0f);
+        stats->setMaxMana(305.0f);
+        stats->setBaseAd(48.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(340.0f);
+        stats->setArmor(13.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(4.5f);
         stats->setMp5(6.9f);
     }

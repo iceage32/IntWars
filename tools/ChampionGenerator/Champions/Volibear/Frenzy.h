@@ -11,11 +11,11 @@ class Frenzy : public Spell {
 
     public:
     Frenzy(Champion* owner) : Spell(ID_FRENZY, owner, 0.25f, 0) {
-        cooldown[0] = 18f;
-        cooldown[1] = 18f;
-        cooldown[2] = 18f;
-        cooldown[3] = 18f;
-        cooldown[4] = 18f;
+        cooldown[0] = 18.0f;
+        cooldown[1] = 18.0f;
+        cooldown[2] = 18.0f;
+        cooldown[3] = 18.0f;
+        cooldown[4] = 18.0f;
 
         cost[0] = 35;
         cost[1] = 35;
@@ -31,7 +31,7 @@ class Frenzy : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

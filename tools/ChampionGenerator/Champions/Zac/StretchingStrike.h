@@ -11,11 +11,11 @@ class StretchingStrike : public Spell {
 
     public:
     StretchingStrike(Champion* owner) : Spell(ID_STRETCHINGSTRIKE, owner, 0.25f, 0) {
-        cooldown[0] = 9f;
+        cooldown[0] = 9.0f;
         cooldown[1] = 8.5f;
-        cooldown[2] = 8f;
+        cooldown[2] = 8.0f;
         cooldown[3] = 7.5f;
-        cooldown[4] = 7f;
+        cooldown[4] = 7.0f;
 
         cost[0] = 0;
         cost[1] = 0;
@@ -31,7 +31,7 @@ class StretchingStrike : public Spell {
     }
 
     /**
-     * TODO : create the projectile here, and notify it to the map/game
+     * create the projectile here, and notify it to the map/game
      */
     virtual bool cast(float x, float y, Unit* u = 0) {
         return Spell::cast(x, y, u);

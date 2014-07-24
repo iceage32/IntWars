@@ -16,17 +16,17 @@ class Nidalee : public Champion {
         spells.push_back(new PrimalSurgeSwipe(this));
         spells.push_back(new AspectOfTheCougar(this));
 
-        stats->setCurrentHealth(390f);
-        stats->setMaxHealth(390f);
-        stats->setCurrentMana(220f);
-        stats->setMaxMana(220f);
-        stats->setBaseAd(49f);
-        stats->setRange(525f);
-        stats->setMovementSpeed(335f);
-        stats->setArmor(17f);
-        stats->setMagicArmor(30f);
-        stats->setHp5(5f);
-        stats->setMp5(7f);
+        stats->setCurrentHealth(390.0f);
+        stats->setMaxHealth(390.0f);
+        stats->setCurrentMana(220.0f);
+        stats->setMaxMana(220.0f);
+        stats->setBaseAd(49.0f);
+        stats->setRange(525.0f);
+        stats->setMovementSpeed(335.0f);
+        stats->setArmor(17.0f);
+        stats->setMagicArmor(30.0f);
+        stats->setHp5(5.0f);
+        stats->setMp5(7.0f);
     }
 
 };

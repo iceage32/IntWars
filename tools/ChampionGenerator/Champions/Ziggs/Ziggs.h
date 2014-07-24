@@ -16,15 +16,15 @@ class Ziggs : public Champion {
         spells.push_back(new HexplosiveMinefield(this));
         spells.push_back(new MegaInfernoBomb(this));
 
-        stats->setCurrentHealth(390f);
-        stats->setMaxHealth(390f);
-        stats->setCurrentMana(250f);
-        stats->setMaxMana(250f);
-        stats->setBaseAd(51f);
-        stats->setRange(550f);
-        stats->setMovementSpeed(325f);
-        stats->setArmor(16f);
-        stats->setMagicArmor(30f);
+        stats->setCurrentHealth(390.0f);
+        stats->setMaxHealth(390.0f);
+        stats->setCurrentMana(250.0f);
+        stats->setMaxMana(250.0f);
+        stats->setBaseAd(51.0f);
+        stats->setRange(550.0f);
+        stats->setMovementSpeed(325.0f);
+        stats->setArmor(16.0f);
+        stats->setMagicArmor(30.0f);
         stats->setHp5(5.25f);
         stats->setMp5(6.75f);
     }
