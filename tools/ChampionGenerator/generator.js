@@ -82,6 +82,28 @@ class {:spellName:} : public Spell {\r\n\
 };\r\n\
 \r\n\
 #endif';
+var championFactory = '#ifndef _CHAMPION_FACTORY_H\r\n\
+#define _CHAMPION_FACTORY_H\r\n\
+\r\n\
+{:includes:}\
+\r\n\
+class ChampionFactory {\r\n\
+\r\n\
+    public:\r\n\
+\r\n\
+    /**\r\n\
+     * Todo : Code every champion and add em here..\r\n\
+     */\r\n\
+    static Champion* getChampionFromType(const std::string& type, Map* map, uint32 id) {\r\n\
+{:logic:}\
+\r\n\
+        return new Champion(type, map, id);\r\n\
+    }\r\n\
+\r\n\
+\r\n\
+};\r\n\
+\r\n\
+#endif';
 
 //begin script
 var http = require('http');
@@ -114,18 +136,25 @@ http.get(RIOT_API_URL, function(res) {
 
 function createChampions() {
     //create champions dir
-    if(!fs.existsSync(__dirname + "/Champions/")) {
-        fs.mkdirSync(__dirname + "/Champions/");
+    if(!fs.existsSync(__dirname + "/output/")) {
+        fs.mkdirSync(__dirname + "/output/");
+        console.log("Created 'output' directory.");
+    }
+    if(!fs.existsSync(__dirname + "/output/Champions/")) {
+        fs.mkdirSync(__dirname + "/output/Champions/");
         console.log("Created 'Champions' directory.");
     }
+
+    var championFactoryInclude = "";
+    var championFactoryLogic = "";
 
     //loop trough champions
     for(var champion in champions.data) {
         var c = champions.data[champion];
 
         //create folder for champion
-        if(!fs.existsSync(__dirname + "/Champions/" + c.key + "/")) {
-            fs.mkdirSync(__dirname + "/Champions/" + c.key + "/");
+        if(!fs.existsSync(__dirname + "/output/Champions/" + c.key + "/")) {
+            fs.mkdirSync(__dirname + "/output/Champions/" + c.key + "/");
             console.log("Created 'Champions/" + c.key + "' directory.");
         }
         //create spells
@@ -163,7 +192,7 @@ function createChampions() {
             spellFile.bindParam('{:damage4:}', (typeof s.effect[0][3] != 'undefined') ? s.effect[0][3] : 0);
             spellFile.bindParam('{:damage5:}', (typeof s.effect[0][4] != 'undefined') ? s.effect[0][4] : 0);
 
-            fs.writeFileSync(__dirname + "/Champions/" + c.key + "/" + toAlphaNoSpaces(s.name) + ".h", spellFile.get(), {'flags': 'w+'});
+            fs.writeFileSync(__dirname + "/output/Champions/" + c.key + "/" + toAlphaNoSpaces(s.name) + ".h", spellFile.get(), {'flags': 'w+'});
             console.log("Successfully created spell file for spell '" + s.name + "'");
         }
 
@@ -188,9 +217,21 @@ function createChampions() {
         championFile.bindParam('{:spellList:}', spellList);
         championFile.bindParam('{:includeSpellList:}', includeSpellList);
 
-        fs.writeFileSync(__dirname + "/Champions/" + c.key + "/" + toAlphaNoSpaces(c.name) + ".h", championFile.get(), {'flags': 'w+'});
+        fs.writeFileSync(__dirname + "/output/Champions/" + c.key + "/" + toAlphaNoSpaces(c.name) + ".h", championFile.get(), {'flags': 'w+'});
         console.log("Successfully created champion file for champion '" + c.name + "'");
+
+        championFactoryInclude += '#include "Champions/' + toAlphaNoSpaces(c.name) + '/' + toAlphaNoSpaces(c.name) + '.h"\r\n';
+        championFactoryLogic += '        if(type == "' + toAlphaNoSpaces(c.name) + '") {\r\n            return new ' + toAlphaNoSpaces(c.name) + '(map, id);\r\n        }\r\n';
     }
+    console.log("Creating ChampionFactory.h");
+
+    var championFactoryFile = new stringBuilder(championFactory);
+
+    championFactoryFile.bindParam('{:includes:}', championFactoryInclude);
+    championFactoryFile.bindParam('{:logic:}', championFactoryLogic);
+
+    fs.writeFileSync(__dirname + "/output/ChampionFactory.h", championFactoryFile.get(), {'flags': 'w+'});
+    console.log('Done');
 }
 function floatVal(val) {
     return ((val % 1 == 0) ? val + '.0' : val);
